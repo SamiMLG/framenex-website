@@ -30,3 +30,7 @@
 # New photos uploaded through the CMS (resized automatically). Re-uploading under the same name: purge the cache.
 /media/*
   Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+# llms.txt (Markdown for AI assistants)
+/llms.txt
+  Content-Type: text/markdown; charset=utf-8

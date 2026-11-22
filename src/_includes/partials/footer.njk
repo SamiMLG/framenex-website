@@ -1,6 +1,7 @@
 {%- set isHome = pageKey == "home" -%}
-{%- set home = "index.html" if isHome else "../index.html" -%}
-{%- set sp = "side-pages/" if isHome else "" -%}
+{%- set abs = pageKey == "notfound" -%}
+{%- set home = "/index.html" if abs else ("index.html" if isHome else "../index.html") -%}
+{%- set sp = "/side-pages/" if abs else ("side-pages/" if isHome else "") -%}
 {%- set s = fnx.settings -%}
 <footer class="site-footer">
 <div class="container">

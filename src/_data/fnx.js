@@ -326,8 +326,15 @@ export default async function () {
     ogUrl: `${SITE}side-pages/datenschutz`, og: await ogImage(""), prefix: "../", bodyClass: "legal-page",
   });
 
+  // ── 404 page (absolute links, not indexed) ──────────────────────────
+  heads.notfound = head({
+    key: "notfound", seo: { titel: "Seite nicht gefunden | Framenex", beschreibung: "Diese Seite gibt es auf framenex.com nicht (mehr)." },
+    ogUrl: SITE, og: await ogImage(""), prefix: "/", bodyClass: "legal-page",
+  });
+  heads.notfound.robots = "noindex, follow";
+
   return {
-    settings, partners, home, heroPoster, services, serviceNames, leistungen, faqPage, ref, heads,
+    settings, partners, publicProjects, home, heroPoster, services, serviceNames, leistungen, faqPage, ref, heads,
     projectsJs, projectsScript,
   };
 }

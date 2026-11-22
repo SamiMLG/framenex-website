@@ -1,0 +1,38 @@
+---
+permalink: llms.txt
+eleventyExcludeFromCollections: true
+---
+{%- set s = fnx.settings -%}
+{%- set u = s.unternehmen -%}
+{%- set base = "https://framenex.com/" -%}
+# Framenex
+
+> {{ fnx.home.seo.beschreibung | safe }}
+
+Framenex ist die Foto- und Videoproduktion von {{ fnx.home.ueberMich.name | safe }} aus {{ u.region | safe }} (Nähe St. Pölten). Videoproduktion, Fotografie, Drohnenaufnahmen und Postproduktion sind einzeln buchbar oder kombinierbar. Einsatzgebiet: {{ u.einsatzgebiet | join(", ") | safe }}. Preisrahmen: {{ u.priceRange | safe }}; das Erstgespräch ist kostenlos.
+
+Kontakt: {{ s.email }} · {{ s.telefon }} · {{ u.strasse | safe }}, {{ u.plz }} {{ u.ort | safe }}, Österreich
+
+## Leistungen
+
+- [Leistungen im Überblick]({{ base }}side-pages/leistungen): {{ fnx.leistungen.seo.beschreibung | safe }}
+{%- for l in s.leistungen %}
+- [{{ l.name | safe }}]({{ base }}side-pages/{{ l.key }}): {{ fnx.services[l.key].seo.beschreibung | safe }}
+{%- endfor %}
+
+## Referenzen
+
+- [Alle Referenzen]({{ base }}side-pages/projekte): {{ fnx.ref.seo.beschreibung | safe }}
+{%- for pr in fnx.publicProjects %}
+- [{{ pr.title | safe }}]({{ base }}side-pages/projekte#projekt={{ pr.id }}): {{ pr.lead | safe }}
+{%- endfor %}
+
+## Häufige Fragen
+
+- [FAQ]({{ base }}side-pages/faq): {{ fnx.faqPage.seo.beschreibung | safe }}
+- [Startseite]({{ base }}): Über mich, Ablauf einer Produktion und Kontaktformular
+
+## Optional
+
+- [Impressum]({{ base }}side-pages/impressum): Anbieterkennzeichnung und Unternehmensangaben
+- [Datenschutz]({{ base }}side-pages/datenschutz): Datenschutzerklärung
