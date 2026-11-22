@@ -4,7 +4,7 @@
 
 backend:
   name: github
-  repo: DEIN-GITHUB-NAME/framenex-website
+  repo: SamiMLG/framenex-website
   branch: main
   commit_messages:
     create: "CMS: {{collection}} „{{slug}}“ angelegt"
