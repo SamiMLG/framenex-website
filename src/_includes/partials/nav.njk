@@ -1,0 +1,22 @@
+{%- set isHome = pageKey == "home" -%}
+{%- set home = "index.html" if isHome else "../index.html" -%}
+{%- set sp = "side-pages/" if isHome else "" -%}
+{%- macro cur(k) -%}{% if pageKey == k %} aria-current="page"{% endif %}{%- endmacro -%}
+<a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+<header class="navbar" data-site-header="">
+<a aria-label="Framenex Startseite" class="logo" href="{{ home }}"><img alt="Framenex" decoding="async" fetchpriority="high" height="120" src="{{ p }}logo.svg" width="448"/></a>
+<button aria-controls="navMenu" aria-expanded="false" aria-label="Menü öffnen" class="nav-toggle" id="navToggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Hauptnavigation" class="nav-menu" id="navMenu">
+<ul>
+<li><a href="{{ '#hero' if isHome else '../index.html' }}"{{ cur('home') }}>Start</a></li>
+<li class="nav-item nav-item--services">
+<div class="nav-services-trigger"><a class="nav-services-link" href="{{ sp }}leistungen.html">Leistungen</a><button aria-controls="servicesSubmenu" aria-expanded="false" aria-label="Leistungsseiten öffnen" class="nav-submenu-toggle" type="button"><span aria-hidden="true"></span></button></div>
+<ul aria-label="Leistungsseiten" class="nav-submenu" id="servicesSubmenu"><li><a href="{{ sp }}leistungen.html"{{ cur('leistungen') }}>Übersicht</a></li>{% for l in fnx.settings.leistungen %}<li><a href="{{ sp }}{{ l.key }}.html"{{ cur(l.key) }}>{{ l.name }}</a></li>{% endfor %}</ul>
+</li>
+<li><a href="{{ sp }}projekte.html"{{ cur('projekte') }}>Referenzen</a></li>
+<li><a href="{{ '#about' if isHome else '../index.html#about' }}">Über mich</a></li>
+<li><a href="{{ sp }}faq.html"{{ cur('faq') }}>FAQ</a></li>
+<li><a href="{{ '#contact' if (isHome or pageKey == 'projekte') else home + '#contact' }}">Kontakt</a></li>
+</ul>
+</nav>
+</header>

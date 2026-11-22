@@ -1,0 +1,42 @@
+{%- set isHome = pageKey == "home" -%}
+{%- set home = "index.html" if isHome else "../index.html" -%}
+{%- set sp = "side-pages/" if isHome else "" -%}
+{%- set s = fnx.settings -%}
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer-grid">
+<div class="site-footer-brand">
+<img alt="Framenex" decoding="async" height="120" loading="lazy" src="{{ p }}logo.svg" width="448"/>
+<p>{{ s.footerText }}</p>
+</div>
+<nav aria-label="Leistungen im Footer" class="site-footer-column">
+<p class="site-footer-title">Leistungen</p>
+{%- for l in s.leistungen %}
+<a href="{{ sp }}{{ l.key }}.html">{{ l.name }}</a>
+{%- endfor %}
+</nav>
+<nav aria-label="Weitere Seiten im Footer" class="site-footer-column">
+<p class="site-footer-title">Framenex</p>
+<a href="{{ sp }}projekte.html">Referenzen</a>
+<a href="{{ home }}#about">Über mich</a>
+<a href="{{ sp }}faq.html">FAQ</a>
+<a href="{{ home }}#contact">Kontakt</a>
+</nav>
+<div class="site-footer-column">
+<p class="site-footer-title">Kontakt</p>
+<a href="mailto:{{ s.email }}">{{ s.email }}</a>
+<a href="tel:{{ s.telefon | replace(' ', '') }}">{{ s.telefon }}</a>
+<a href="{{ s.instagram }}" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a href="{{ s.youtube }}" rel="noopener noreferrer" target="_blank">YouTube</a>
+</div>
+</div>
+<div class="site-footer-bottom">
+<p>{{ s.copyright }}</p>
+<nav aria-label="Rechtliches">
+<a href="{{ sp }}datenschutz.html">Datenschutz</a>
+<a href="{{ sp }}impressum.html">Impressum</a>
+<button class="fnx-cookie-settings-btn" data-fnx-cookie-settings="" type="button">Cookie-Einstellungen</button>
+</nav>
+</div>
+</div>
+</footer>

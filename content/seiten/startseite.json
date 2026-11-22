@@ -1,0 +1,182 @@
+{
+  "seo": {
+    "titel": "Framenex – Foto & Videoproduktion in Niederösterreich & Wien",
+    "beschreibung": "Professionelle Videoproduktion, Fotografie, Drohnenaufnahmen und Postproduktion für Unternehmen, Events und besondere Projekte in Wien, Niederösterreich und ganz Österreich.",
+    "bild": "compressed/video_loading.webp"
+  },
+  "hero": {
+    "eyebrow": "Film · Foto · Drohne · Postproduktion",
+    "titelMarke": "Framenex",
+    "titel": "– Foto & Videoproduktion in Niederösterreich & Wien",
+    "untertitel": "Video, Fotografie, Drohnenaufnahmen und Postproduktion für Unternehmen, Events und besondere Projekte – einzeln buchbar oder kombiniert.",
+    "buttonPrimaer": "Kostenloses Erstgespräch",
+    "buttonSekundaer": "Leistungen ansehen",
+    "poster": "compressed/video_loading.webp",
+    "posterMobil": "compressed/hero-poster-mobile.webp",
+    "videoAv1": "https://videos.framenex.com/video_av1.webm",
+    "videoH265": "https://videos.framenex.com/video_h265.mp4",
+    "videoH264": "https://videos.framenex.com/video_h264.mp4"
+  },
+  "leistungen": {
+    "eyebrow": "Leistungen",
+    "titel": "Vier Leistungen. Einzeln buchbar.",
+    "intro": "Jede Leistung steht für sich – für größere Projekte greifen sie nahtlos ineinander.",
+    "karten": [
+      {
+        "seite": "videoproduktion",
+        "titel": "Videoproduktion",
+        "text": "Imagefilm, Werbefilm, Social Media, Event-, Hochzeits- und Kurzfilm.",
+        "bild": "compressed/lostyou/lostyou3.webp",
+        "bildMobil": "compressed/lostyou/lostyou3-mobile.webp",
+        "alt": "Szene aus dem Framenex Kurzfilm Lost You"
+      },
+      {
+        "seite": "fotografie",
+        "titel": "Fotografie",
+        "text": "Unternehmen, Events, Hochzeiten, Portraits, Architektur und Bau.",
+        "bild": "compressed/hochzeit/hochzeit2.webp",
+        "bildMobil": "compressed/hochzeit/hochzeit2-600.webp",
+        "alt": "Hochzeitsfotografie von Framenex"
+      },
+      {
+        "seite": "drohnenaufnahmen",
+        "titel": "Drohnenaufnahmen",
+        "text": "4K-Drohnenvideo und Luftbilder für Immobilien, Events und Baufortschritt.",
+        "bild": "compressed/side-photo-mobile.webp",
+        "bildMobil": "compressed/side-photo-800.webp",
+        "alt": "Drohnenaufnahme eines Bauprojekts in Niederösterreich"
+      },
+      {
+        "seite": "postproduktion",
+        "titel": "Postproduktion",
+        "text": "Videoschnitt, Color Grading, Sounddesign, Untertitel und VFX.",
+        "bild": "compressed/lostyou/lostyou1.webp",
+        "bildMobil": "compressed/lostyou/lostyou1-mobile.webp",
+        "alt": "Filmstill als Beispiel für Color Grading"
+      }
+    ]
+  },
+  "arbeiten": {
+    "eyebrow": "Ausgewählte Arbeiten",
+    "titel": "Echte Projekte. Eigene Geschichten.",
+    "intro": "Film, Event, Hochzeit und Dokumentation aus Wien und Niederösterreich.",
+    "projekte": [
+      {
+        "projekt": "lost-you",
+        "label": "Kurzfilm",
+        "titel": "Lost You",
+        "bild": "compressed/lostyou/lostyou3.webp",
+        "bildMobil": "compressed/lostyou/lostyou3-mobile.webp",
+        "alt": "Lost You – Kurzfilm"
+      },
+      {
+        "projekt": "brueckenbau-per-helikopter",
+        "label": "Dokumentation",
+        "titel": "Brückenbau per Helikopter",
+        "bild": "compressed/heli/heli1.webp",
+        "bildMobil": "",
+        "alt": "Brückenbau per Helikopter"
+      },
+      {
+        "projekt": "hochzeitsfilm-winter",
+        "label": "Hochzeitsfilm",
+        "titel": "Martin & Rosemarie Winter",
+        "bild": "compressed/hochzeit/hochzeit1.webp",
+        "bildMobil": "",
+        "alt": "Hochzeitsfilm Martin und Rosemarie Winter"
+      }
+    ]
+  },
+  "ablauf": {
+    "eyebrow": "Ablauf",
+    "titel": "Sechs Schritte zum fertigen Ergebnis.",
+    "intro": "Umfang und Produktionstiefe richten sich nach Ihrem Projekt.",
+    "schritte": [
+      {
+        "titel": "Anfrage",
+        "text": "Eine kurze Nachricht mit Idee, Anlass oder Ziel genügt als Ausgangspunkt."
+      },
+      {
+        "titel": "Erstgespräch",
+        "text": "Kostenlos und unverbindlich: Ziel, Einsatz, Termin und Budgetrahmen klären."
+      },
+      {
+        "titel": "Planung",
+        "text": "Konzept, Locations, Technik und Drehplan werden passend vorbereitet."
+      },
+      {
+        "titel": "Produktion",
+        "text": "Kamera, Licht, Ton und Drohne vor Ort – allein oder mit eingespieltem Team."
+      },
+      {
+        "titel": "Postproduktion",
+        "text": "Schnitt, Bildauswahl, Color Grading, Sounddesign und Untertitel."
+      },
+      {
+        "titel": "Übergabe",
+        "text": "Zwei Korrekturrunden inklusive, danach Master-Dateien und alle vereinbarten Formate."
+      }
+    ]
+  },
+  "partnerTitel": "Partner & Auftraggeber",
+  "ueberMich": {
+    "eyebrow": "Über mich",
+    "name": "Samuel Moser",
+    "lead": "Filmemacher, Videograf und Fotograf aus Niederösterreich.",
+    "absaetze": [
+      "Mit Framenex realisiere ich visuelle Produktionen für Unternehmen, Marken, Events, Hochzeiten und besondere Projekte. Mein Schwerpunkt liegt auf Videoproduktion – von der Konzeption über Kamera, Licht, Ton und Drohne bis zum finalen Schnitt.",
+      "Je nach Umfang arbeite ich allein oder mit einem eingespielten Netzwerk. Fotografie, Drohnenaufnahmen und Postproduktion können genauso unabhängig gebucht werden wie eine vollständige Filmproduktion.",
+      "Für Foto und Video arbeite ich mit professionellen Sony-Kameras. Bei High-End-Filmproduktionen steht eine DJI Ronin 4D als professionelle Cinema-Kamera zur Verfügung; hochwertige Multikamera-Aufzeichnungen sind ebenfalls möglich."
+    ],
+    "fakten": [
+      {
+        "label": "Standort",
+        "wert": "Niederösterreich, Nähe St. Pölten"
+      },
+      {
+        "label": "Einsatzgebiet",
+        "wert": "Niederösterreich, Wien & ganz Österreich"
+      },
+      {
+        "label": "Fokus",
+        "wert": "Video, Foto, Drohne, Postproduktion"
+      }
+    ],
+    "portraitSw": "compressed/samuel-moser-bw.webp",
+    "portraitFarbe": "compressed/samuel-moser-color.webp",
+    "alt": "Samuel Moser – Framenex",
+    "fotoCredit": "@Kogler Emil",
+    "portraitBreite": 1600,
+    "portraitHoehe": 2000
+  },
+  "faq": {
+    "titel": "Kurz gefragt. Klar beantwortet.",
+    "intro": "Buchung, Preise, Einsatzgebiet und Drohnenaufnahmen im Überblick.",
+    "fragen": [
+      {
+        "frage": "Bietet Framenex auch reine Videoproduktionen an?",
+        "antwort": "Ja. Video ist eine eigenständige Leistung und kann ohne Fotografie gebucht werden – vom einzelnen Drehtag bis zur vollständigen Produktion mit Konzept und Postproduktion."
+      },
+      {
+        "frage": "Was kostet eine Videoproduktion?",
+        "antwort": "Social-Media-Clips sind je nach Umfang auch unter 500 € inkl. USt. möglich. Werbefilme liegen meist bei etwa 1.500–8.000 € inkl. USt., Kurzfilmproduktionen beginnen in der Regel ab 10.000 € inkl. USt. Das Angebot wird immer individuell abgestimmt."
+      },
+      {
+        "frage": "Bietet Framenex Drohnenaufnahmen an?",
+        "antwort": "Ja – eigenständig oder als Teil einer größeren Produktion, sofern der Flug rechtlich, sicher und unter den Bedingungen vor Ort möglich ist."
+      },
+      {
+        "frage": "Arbeitet Framenex in Wien und Niederösterreich?",
+        "antwort": "Ja. Framenex ist in Niederösterreich zuhause und produziert regelmäßig in Wien, rund um St. Pölten und in ganz Niederösterreich."
+      },
+      {
+        "frage": "Kann Framenex österreichweit gebucht werden?",
+        "antwort": "Ja. Reise- und Logistikkosten werden vorab transparent im Angebot berücksichtigt."
+      },
+      {
+        "frage": "Wie läuft die Zusammenarbeit ab?",
+        "antwort": "Nach einem kostenlosen Erstgespräch folgen – je nach Projekt – Konzeption, Planung, Produktion, Postproduktion, Korrekturen und die finale Übergabe."
+      }
+    ]
+  }
+}

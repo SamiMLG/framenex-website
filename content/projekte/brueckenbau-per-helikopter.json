@@ -1,0 +1,62 @@
+{
+  "id": "brueckenbau-per-helikopter",
+  "title": "Brückenbau per Helikopter",
+  "lead": "Ein außergewöhnlicher Bauvorgang am Diamond Country Club – dokumentiert aus mehreren Perspektiven.",
+  "cardLabel": "Dokumentation · Foto & Video",
+  "categories": [
+    "immobilien",
+    "filmproduktionen"
+  ],
+  "layout": "wide",
+  "featured": true,
+  "cover": {
+    "src": "compressed/heli/heli1.webp",
+    "alt": "Helikopter transportiert einen Holzträger über den Diamond Country Club",
+    "width": 800,
+    "height": 600,
+    "position": "50% 48%"
+  },
+  "meta": {
+    "client": "Rubner Holzbau & Holzbau Nestler",
+    "service": "Fotografie, Videografie & Baudokumentation",
+    "industry": "Holzbau & Infrastruktur",
+    "location": "Atzenbrugg, Niederösterreich"
+  },
+  "description": [
+    "Zwei neue Holzbrücken wurden nicht auf herkömmlichem Weg montiert: Ein Helikopter brachte die massiven Leimbinder millimetergenau an ihren Bestimmungsort.",
+    "Framenex dokumentierte den Ablauf fotografisch und videografisch – von den ersten Flugmanövern bis zur finalen Platzierung der Brückenelemente."
+  ],
+  "facts": [
+    "Produktion während des laufenden Baueinsatzes",
+    "Foto- und Videoaufnahmen",
+    "Leimbinder von Rubner Holzbau"
+  ],
+  "externalLink": {
+    "label": "Bewegte Bilder auf Instagram ansehen",
+    "href": "https://www.instagram.com/p/DG8EOrjMyjW/"
+  },
+  "media": [
+    {
+      "type": "image",
+      "src": "compressed/heli/heli1.webp",
+      "alt": "Helikopter mit schwebendem Holzträger über dem Gelände",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "type": "image",
+      "src": "compressed/heli/heli2.webp",
+      "alt": "Montage einer Holzbrücke am Diamond Country Club",
+      "width": 800,
+      "height": 533
+    },
+    {
+      "type": "image",
+      "src": "compressed/heli/heli3.webp",
+      "alt": "Roter Helikopter während des Brückenbaus",
+      "width": 800,
+      "height": 533
+    }
+  ],
+  "order": 4
+}

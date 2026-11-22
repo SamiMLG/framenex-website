@@ -1,0 +1,54 @@
+{%- set h = fnx.heads[pageKey] -%}
+{%- set p = h.prefix -%}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="strict-origin-when-cross-origin" name="referrer"/>
+<title>{{ h.title }}</title>
+<meta content="{{ h.description }}" name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="Framenex" name="author"/>
+<meta content="#0b0b0c" name="theme-color"/>
+<meta content="{{ h.ogTitle }}" property="og:title"/>
+<meta content="{{ h.ogDescription }}" property="og:description"/>
+<meta content="{{ h.ogUrl }}" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="de_AT" property="og:locale"/>
+<meta content="Framenex" property="og:site_name"/>
+<meta content="{{ h.ogImage }}" property="og:image"/>
+<meta content="Framenex – Foto und Videoproduktion" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="{{ h.canonical }}" rel="canonical"/>
+{%- for pl in h.preloads %}
+<link as="image" fetchpriority="high" href="{{ pl.href }}"{% if pl.media %} media="{{ pl.media }}"{% endif %} rel="preload"{% if pl.type %} type="{{ pl.type }}"{% endif %}/>
+{%- endfor %}
+<link as="image" fetchpriority="high" href="{{ p }}logo.svg" rel="preload" type="image/svg+xml"/>
+<link href="{{ p }}compressed/favicon/favicon.ico" rel="icon" sizes="16x16 32x32 48x48 64x64" type="image/x-icon"/>
+<link href="{{ p }}compressed/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
+{%- for s in h.staticSchemas %}
+<script type="application/ld+json">
+{{ s | safe }}
+</script>
+{%- endfor %}
+<link rel="preload" href="{{ p }}fonts/roboto-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin=""/>
+<style id="site-css">{{ p | inlineCss | safe }}</style>
+{%- for js in h.pageScripts %}
+<script defer="" src="{{ p }}{{ js }}"></script>
+{%- endfor %}
+{%- for s in h.schemas %}
+<script type="application/ld+json">{{ s | safe }}</script>
+{%- endfor %}
+<script defer="" src="{{ p }}javascript/framenex-v20.min.js"></script>
+</head>
+<body class="{{ h.bodyClass }}">
+{% include "partials/nav.njk" %}
+<main id="main-content">
+{{ content | safe }}
+</main>
+{% include "partials/footer.njk" %}
+{%- if pageKey == "home" or pageKey == "projekte" %}
+{% include "partials/modal.njk" %}
+{%- endif %}
+</body>
+</html>

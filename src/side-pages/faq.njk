@@ -1,0 +1,28 @@
+---
+layout: base.njk
+pageKey: faq
+permalink: side-pages/faq.html
+---
+{%- from "macros.njk" import crumbs, faqItems, cta -%}
+{%- set d = fnx.faqPage -%}
+<section aria-labelledby="page-title" class="page-hero page-hero--simple">
+<div class="container page-hero-grid"><div>
+{{ crumbs([["Start", "../index.html"], ["FAQ", ""]]) }}
+<span class="eyebrow">Häufige Fragen</span>
+<h1 id="page-title">{{ d.hero.h1 }}</h1>
+<p class="lead">{{ d.hero.lead }}</p>
+</div></div>
+</section>
+<section class="section">
+<div class="container">
+<nav aria-label="FAQ Themen" class="faq-nav">{% for t in d.themen %}<a href="#{{ t.id }}">{{ t.titel }}</a>{% endfor %}</nav>
+{%- for t in d.themen %}
+<section aria-labelledby="{{ t.id }}-title" class="faq-topic faq-grid" id="{{ t.id }}">
+<header><h2 id="{{ t.id }}-title">{{ t.titel }}</h2></header>
+<div class="faq-list" data-faq-accordion="">
+{{ faqItems(t.fragen) }}</div>
+</section>
+{%- endfor %}
+</div>
+</section>
+{{ cta(d.cta.titel, d.cta.text, "../index.html#contact") }}

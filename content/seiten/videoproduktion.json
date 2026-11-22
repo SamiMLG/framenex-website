@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "titel": "Videoproduktion Wien & Niederösterreich | Framenex",
+    "beschreibung": "Videoproduktion bei Framenex: Imagefilm, Werbefilm, Social Media Videos, Reels, Eventfilme, Aftermovies, Produktvideos, Hochzeitsfilme und individuelle Videoprojekte.",
+    "bild": "compressed/lostyou/lostyou3.webp",
+    "schemaName": "Videoproduktion bei Framenex"
+  },
+  "hero": {
+    "h1": "Videoproduktion in Wien & Niederösterreich",
+    "leistung": "Videoproduktion",
+    "lead": "Imagefilme, Werbefilme, Social-Media-Videos und Eventfilme für Unternehmen, Marken und private Projekte – vom Konzept bis zum fertigen 4K-Film. Auch ohne Fotopaket buchbar.",
+    "bild": "compressed/lostyou/lostyou3.webp",
+    "bildMobil": "compressed/lostyou/lostyou3-mobile.webp",
+    "alt": "Cineastische Videoproduktion von Framenex"
+  },
+  "umfang": {
+    "titel": "Das passende Format für Ihre Botschaft.",
+    "text": "Format, Länge und Umfang werden nach dem tatsächlichen Einsatz geplant – nicht nach starren Paketen.",
+    "punkte": [
+      "Imagefilm",
+      "Werbefilm",
+      "Social Media Videos",
+      "Reels",
+      "Eventfilme",
+      "Aftermovies",
+      "Produktvideos",
+      "Hochzeitsfilme",
+      "Kurzfilme",
+      "Individuelle Videoprojekte"
+    ]
+  },
+  "ablauf": {
+    "eyebrow": "Produktion",
+    "titel": "Alles aus einer Hand – oder einzeln.",
+    "text": "Einzelne Bausteine sind separat buchbar. Bei einer Komplettproduktion bleibt der Look vom Drehplan bis zum Export konsistent.",
+    "schritte": [
+      "Konzeption",
+      "Dreh & Kamera",
+      "Licht & Ton",
+      "Interviews",
+      "Drohne",
+      "Videoschnitt",
+      "Color Grading",
+      "Sounddesign",
+      "Untertitel, Social Clips & VFX"
+    ],
+    "hinweis": ""
+  },
+  "preise": {
+    "anzeigen": true,
+    "titel": "Richtwerte statt starrer Pakete.",
+    "text": "Jede Produktion wird individuell kalkuliert. Diese Werte geben eine erste Orientierung.",
+    "zeilen": [
+      {
+        "leistung": "Social-Media-Clips",
+        "preis": "je nach Umfang auch unter 500 €"
+      },
+      {
+        "leistung": "Werbefilme",
+        "preis": "ca. 1.500–8.000 €"
+      },
+      {
+        "leistung": "Kurzfilmproduktionen",
+        "preis": "ab 10.000 €"
+      }
+    ],
+    "hinweis": "Alle Preise inkl. USt. Das konkrete Angebot folgt nach dem kostenlosen Erstgespräch."
+  },
+  "story": {
+    "eyebrow": "Technik & Bildsprache",
+    "titel": "Cineastisch, aber immer zweckgerichtet.",
+    "absaetze": [
+      "Bildsprache, Rhythmus, Ton und Color Grading sollen zur Marke, zum Event oder zur Geschichte passen – ein guter Look ist kein Selbstzweck.",
+      "Gedreht wird mit professionellen Sony-Kameras, für High-End-Filmproduktionen mit der DJI Ronin 4D. Multikamera-Aufzeichnungen für Interviews, Konzerte und Events sind ebenfalls möglich."
+    ],
+    "bilder": [
+      {
+        "bild": "compressed/lostyou/lostyou2.webp",
+        "bildMobil": "",
+        "alt": "Emotionaler Filmstill aus Lost You"
+      },
+      {
+        "bild": "compressed/baumgartner/baumgartner1.webp",
+        "bildMobil": "",
+        "alt": "Videografie bei einem Konzert"
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Fragen zur Videoproduktion.",
+    "intro": "Kosten, Korrekturen, Kamera, Formate und Lieferzeit.",
+    "fragen": [
+      {
+        "frage": "Kann Video ohne Fotografie gebucht werden?",
+        "antwort": "Ja. Reine Videoproduktionen sind ausdrücklich willkommen und werden unabhängig von Fotografie geplant und umgesetzt."
+      },
+      {
+        "frage": "Was kostet eine Videoproduktion?",
+        "antwort": "Social-Media-Clips sind je nach Umfang auch unter 500 € inkl. USt. möglich. Werbefilme liegen meist bei etwa 1.500–8.000 € inkl. USt., Kurzfilmproduktionen beginnen in der Regel ab 10.000 € inkl. USt."
+      },
+      {
+        "frage": "Produziert Framenex Imagefilme und Social-Media-Videos?",
+        "antwort": "Ja – unter anderem Image- und Unternehmensfilme, Werbefilme, Reels, Social-Media-Clips, Eventfilme, Aftermovies, Produktvideos, Hochzeitsfilme und Kurzfilme."
+      },
+      {
+        "frage": "Kann ich nur einen Kameramann buchen?",
+        "antwort": "Ja. Kameraoperation ist einzeln buchbar – mit Sony-Setup, für High-End-Produktionen mit DJI Ronin 4D oder als Teil einer Multikamera-Aufzeichnung."
+      },
+      {
+        "frage": "Wie schnell ist mein Video fertig?",
+        "antwort": "Kleinere Projekte und Social-Media-Videos sind häufig innerhalb von ein bis zwei Wochen fertig. Bei größeren Produktionen wird der Termin vor Projektstart verbindlich abgestimmt."
+      },
+      {
+        "frage": "Sind Korrekturen enthalten?",
+        "antwort": "In der Regel sind zwei kleinere Korrekturschleifen enthalten. Eine komplette Neuausrichtung wird gesondert vereinbart."
+      },
+      {
+        "frage": "Erhalte ich Versionen für Instagram, TikTok und YouTube?",
+        "antwort": "Ja, sofern die benötigten Seitenverhältnisse und Fassungen vorab vereinbart werden. Für TV und Kino gelten zusätzliche technische und lizenzrechtliche Vorgaben."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Erst verstehen. Dann passend produzieren.",
+    "text": "Im kostenlosen Erstgespräch klären wir Format, Ort, Zeitraum und Ziel."
+  }
+}

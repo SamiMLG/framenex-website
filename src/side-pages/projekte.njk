@@ -1,0 +1,28 @@
+---
+layout: base.njk
+pageKey: projekte
+permalink: side-pages/projekte.html
+---
+{%- from "macros.njk" import crumbs, contactForm -%}
+{%- set d = fnx.ref -%}
+<section aria-labelledby="references-title" class="page-hero page-hero--simple">
+<div class="container page-hero-grid"><div>
+{{ crumbs([["Start", "../index.html"], ["Referenzen", ""]]) }}
+<span class="eyebrow">Referenzen</span>
+<h1 id="references-title">{{ d.hero.h1 }}</h1>
+<p class="lead">{{ d.hero.lead }}</p>
+</div></div>
+</section>
+<section aria-labelledby="references-grid-title" class="section">
+<div class="container">
+<h2 class="eyebrow" id="references-grid-title">Ausgewählte Arbeiten</h2>
+<div class="references-toolbar">
+<div aria-label="Referenzen filtern" class="reference-filters" id="projectFilters" role="group"></div>
+<p aria-live="polite" class="references-result-count" id="projectResultCount"></p>
+</div>
+<div class="references-grid" id="projectGrid"></div>
+<p class="references-empty" hidden="" id="projectEmptyState">In dieser Kategorie sind derzeit noch keine Projekte veröffentlicht.</p>
+<noscript><p class="references-noscript">Bitte aktivieren Sie JavaScript, um die Projektgalerie zu verwenden.</p></noscript>
+</div>
+</section>
+{{ contactForm(fnx.settings, "Neue Anfrage über framenex.com – Projekte", "https://framenex.com/side-pages/projekte.html?sent=1") }}

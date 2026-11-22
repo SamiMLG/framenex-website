@@ -1,0 +1,53 @@
+{
+  "email": "office@framenex.com",
+  "telefon": "+43 676 699 5823",
+  "instagram": "https://www.instagram.com/samuel.moser.official",
+  "youtube": "https://youtube.com/@samuelmoser?sub_confirmation=1",
+  "footerText": "Foto, Video, Drohne und Postproduktion aus Niederösterreich – für Wien und ganz Österreich.",
+  "copyright": "© Framenex 2026",
+  "kontaktformular": {
+    "accessKey": "b4bbc808-2055-40a7-9ca0-eec4702f1f3c",
+    "eyebrow": "Kostenloses Erstgespräch",
+    "titel": "Bereit für den nächsten Frame?",
+    "text": "Erzählen Sie kurz von Ihrem Projekt. Das Erstgespräch ist kostenlos und unverbindlich – danach erhalten Sie ein individuelles Angebot."
+  },
+  "unternehmen": {
+    "priceRange": "ca. 500 – 10.000 € inkl. USt.",
+    "strasse": "Handlkreuzgasse 9",
+    "ort": "St. Margarethen an der Sierning",
+    "region": "Niederösterreich",
+    "plz": "3231",
+    "einsatzgebiet": [
+      "Wien",
+      "Niederösterreich",
+      "St. Pölten",
+      "Österreich"
+    ],
+    "profile": [
+      "https://www.instagram.com/samuel.moser.official",
+      "https://www.youtube.com/@samuelmoser"
+    ]
+  },
+  "leistungen": [
+    {
+      "key": "videoproduktion",
+      "name": "Videoproduktion",
+      "kurz": "Vom Social Clip bis zum Imagefilm."
+    },
+    {
+      "key": "fotografie",
+      "name": "Fotografie",
+      "kurz": "Bildserien für Unternehmen, Events und Hochzeiten."
+    },
+    {
+      "key": "drohnenaufnahmen",
+      "name": "Drohnenaufnahmen",
+      "kurz": "4K-Luftaufnahmen für Film, Immobilien und Bau."
+    },
+    {
+      "key": "postproduktion",
+      "name": "Postproduktion",
+      "kurz": "Schnitt, Look, Ton und Versionen für jeden Kanal."
+    }
+  ]
+}

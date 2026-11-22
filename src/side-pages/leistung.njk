@@ -1,0 +1,60 @@
+---
+layout: base.njk
+pagination:
+  data: fnx.settings.leistungen
+  size: 1
+  alias: l
+permalink: "side-pages/{{ l.key }}.html"
+eleventyComputed:
+  pageKey: "{{ l.key }}"
+---
+{%- from "macros.njk" import image, crumbs, faqBlock, cta -%}
+{%- set p = "../" -%}
+{%- set d = fnx.services[l.key] -%}
+<section aria-labelledby="page-title" class="page-hero">
+<div class="container page-hero-grid">
+<div>
+{{ crumbs([["Start", "../index.html"], ["Leistungen", "leistungen.html"], [d.name, ""]]) }}
+<span class="eyebrow">{{ d.name }}</span>
+<h1 id="page-title">{{ d.hero.h1 }}</h1>
+<p class="lead">{{ d.hero.lead }}</p>
+<div class="btn-row"><a class="btn-primary" href="../index.html?leistung={{ d.hero.leistung }}#contact">Kostenloses Erstgespräch</a><a class="btn-secondary" href="projekte.html">Referenzen ansehen</a></div>
+</div>
+<figure class="page-hero-media">{{ image(d.heroImg, d.hero.alt, p, true) }}</figure>
+</div>
+</section>
+<section aria-labelledby="formats-title" class="section">
+<div class="container split">
+<header><span class="eyebrow">Leistungsumfang</span><h2 id="formats-title">{{ d.umfang.titel }}</h2><p>{{ d.umfang.text }}</p></header>
+<ul class="chip-list">{% for c in d.umfang.punkte %}<li>{{ c }}</li>{% endfor %}</ul>
+</div>
+</section>
+<section aria-labelledby="flow-title" class="section section--raised">
+<div class="container">
+<header class="section-head"><div><span class="eyebrow">{{ d.ablauf.eyebrow }}</span><h2 id="flow-title">{{ d.ablauf.titel }}</h2></div><p>{{ d.ablauf.text }}</p></header>
+<ol class="num-list">{% for s in d.ablauf.schritte %}<li>{{ s }}</li>{% endfor %}</ol>
+{% if d.ablauf.hinweis %}<p class="callout"><strong>Hinweis:</strong> {{ d.ablauf.hinweis }}</p>{% endif %}
+</div>
+</section>
+{%- if d.preise.anzeigen %}
+<section aria-labelledby="price-title" class="section">
+<div class="container split">
+<header><span class="eyebrow">Preisrahmen</span><h2 id="price-title">{{ d.preise.titel }}</h2><p>{{ d.preise.text }}</p></header>
+<div><dl class="rows">{% for z in d.preise.zeilen %}<div><dt>{{ z.leistung }}</dt><dd>{{ z.preis }}</dd></div>{% endfor %}</dl><p class="note">{{ d.preise.hinweis }}</p></div>
+</div>
+</section>
+{%- endif %}
+<section aria-labelledby="story-title" class="section section--raised">
+<div class="container story">
+<div><span class="eyebrow">{{ d.story.eyebrow }}</span><h2 id="story-title">{{ d.story.titel }}</h2>{% for para in d.story.absaetze %}<p>{{ para }}</p>{% endfor %}</div>
+<div class="story-images{% if d.storyImgs.length == 1 %} story-images--single{% endif %}">{% for b in d.storyImgs %}<figure>{{ image(b.img, b.alt, p) }}</figure>{% endfor %}</div>
+</div>
+</section>
+{{ faqBlock("faq-" + l.key, d.faq.titel, d.faq.intro, d.faq.fragen, "faq.html") }}
+<section aria-labelledby="related-title" class="section section--raised">
+<div class="container">
+<header class="section-head section-head--stacked"><div><span class="eyebrow">Kombinierbar</span><h2 id="related-title">Weitere Leistungen</h2></div></header>
+<div class="related">{% for r in d.related %}<a href="{{ r.key }}.html"><span>{{ r.name }}</span><p>{{ r.kurz }}</p></a>{% endfor %}</div>
+</div>
+</section>
+{{ cta(d.cta.titel, d.cta.text, "../index.html?leistung=" + d.hero.leistung + "#contact") }}

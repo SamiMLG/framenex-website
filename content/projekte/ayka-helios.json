@@ -1,0 +1,57 @@
+{
+  "id": "ayka-helios",
+  "title": "Ayka Helios Logistics Park",
+  "lead": "Baufortschrittsfotografie für einen groß dimensionierten Logistikpark mit nachhaltiger Holzkonstruktion.",
+  "cardLabel": "Industrie · Baufortschritt",
+  "categories": [
+    "immobilien"
+  ],
+  "layout": "half",
+  "featured": false,
+  "cover": {
+    "src": "compressed/ayka/ayka1.webp",
+    "alt": "Ayka Helios Logistics Park während der Bauphase",
+    "width": 800,
+    "height": 532,
+    "position": "50% 52%"
+  },
+  "meta": {
+    "client": "Rubner Holzbau",
+    "service": "Baufortschritts- & Industriefotografie",
+    "industry": "Logistik & Holzbau",
+    "location": "Fischamend / Flughafen Wien"
+  },
+  "description": [
+    "Zwischen dem Flughafen Wien und Fischamend entstand der Ayka Helios Logistics Park mit mehr als 80.000 Quadratmetern Nutzfläche.",
+    "Die fotografische Begleitung konzentrierte sich auf Dimension, Baufortschritt und die nachhaltige Holzkonstruktion aus Säulen, Trägern und Dachelementen."
+  ],
+  "facts": [
+    "Mehr als 80.000 m² Nutzfläche",
+    "Dokumentation der Holzkonstruktion",
+    "Industrie- und Architekturaufnahmen"
+  ],
+  "media": [
+    {
+      "type": "image",
+      "src": "compressed/ayka/ayka1.webp",
+      "alt": "Fassade des Ayka Helios Logistics Park im Bau",
+      "width": 800,
+      "height": 532
+    },
+    {
+      "type": "image",
+      "src": "compressed/ayka/ayka2.webp",
+      "alt": "Baufortschritt und Holzkonstruktion des Logistikparks",
+      "width": 800,
+      "height": 601
+    },
+    {
+      "type": "image",
+      "src": "compressed/ayka/ayka3.webp",
+      "alt": "Weitläufiges Areal des Ayka Helios Logistics Park",
+      "width": 800,
+      "height": 601
+    }
+  ],
+  "order": 6
+}

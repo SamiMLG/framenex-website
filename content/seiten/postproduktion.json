@@ -1,0 +1,101 @@
+{
+  "seo": {
+    "titel": "Postproduktion, Videoschnitt & Color Grading | Framenex",
+    "beschreibung": "Postproduktion bei Framenex: Videoschnitt, Color Grading, Sounddesign, Untertitel, Social Media Clips, VFX und Exporte – auch mit bereits vorhandenem Material.",
+    "bild": "compressed/lostyou/lostyou1.webp",
+    "schemaName": "Postproduktion, Videoschnitt & Color Grading"
+  },
+  "hero": {
+    "h1": "Postproduktion, Videoschnitt & Color Grading",
+    "leistung": "Postproduktion",
+    "lead": "Schnitt, Farbe, Ton und fertige Versionen für Werbefilm, Imagefilm, Social Media, Eventfilm und Kurzfilm – auch für bereits gedrehtes, extern produziertes Material.",
+    "bild": "compressed/lostyou/lostyou1.webp",
+    "bildMobil": "compressed/lostyou/lostyou1-mobile.webp",
+    "alt": "Filmstill als Beispiel für Videoschnitt und Color Grading"
+  },
+  "umfang": {
+    "titel": "Aus Material wird eine fertige Geschichte.",
+    "text": "Postproduktion ist nicht an einen Dreh von Framenex gebunden. Vorhandenes Material wird übernommen, strukturiert und für den Einsatz aufbereitet.",
+    "punkte": [
+      "Videoschnitt",
+      "Color Grading",
+      "Sounddesign",
+      "Tonbearbeitung",
+      "Untertitel",
+      "Social Media Clips",
+      "VFX",
+      "Versionen & Exporte"
+    ]
+  },
+  "ablauf": {
+    "eyebrow": "Workflow",
+    "titel": "Präzise, nachvollziehbar und passend zum Kanal.",
+    "text": "Das Material wird geprüft, geordnet und schrittweise zur finalen Version entwickelt.",
+    "schritte": [
+      "Datenübernahme & Sichtung",
+      "Rohschnitt & Dramaturgie",
+      "Feinschnitt",
+      "Color Grading & Ton",
+      "Untertitel & VFX",
+      "Master & Social-Versionen"
+    ],
+    "hinweis": ""
+  },
+  "preise": {
+    "anzeigen": false,
+    "titel": "",
+    "text": "",
+    "zeilen": [],
+    "hinweis": ""
+  },
+  "story": {
+    "eyebrow": "Look & Rhythmus",
+    "titel": "Der Schnitt bestimmt, wie ein Film wirkt.",
+    "absaetze": [
+      "Tempo, Pausen, Musik, Sounddesign und Farbe entscheiden, ob eine Botschaft verständlich und emotional ankommt.",
+      "Übergabe als 4K-Master, Webversion, Hochformat-Reel, Untertitelversion oder in mehreren Kampagnenvarianten."
+    ],
+    "bilder": [
+      {
+        "bild": "compressed/lostyou/lostyou2.webp",
+        "bildMobil": "",
+        "alt": "Filmstill mit emotionalem Color Grading"
+      },
+      {
+        "bild": "compressed/lostyou/lostyou3.webp",
+        "bildMobil": "",
+        "alt": "Cineastische Szene nach der Postproduktion"
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Fragen zur Postproduktion.",
+    "intro": "Videoschnitt als Einzelleistung, Feedbackrunden und Formate.",
+    "fragen": [
+      {
+        "frage": "Kann ich nur Videoschnitt buchen?",
+        "antwort": "Ja. Postproduktion ist unabhängig vom Dreh buchbar – auch für vorhandenes oder extern produziertes Material."
+      },
+      {
+        "frage": "Welche Leistungen sind möglich?",
+        "antwort": "Videoschnitt, Color Grading, Sounddesign, Untertitel, Social-Media-Fassungen, Formatadaptionen, Exporte und VFX."
+      },
+      {
+        "frage": "Sind Korrekturen enthalten?",
+        "antwort": "In der Regel zwei kleinere Korrekturschleifen. Umfang und Art der Feedbackrunden werden vor Projektbeginn festgelegt."
+      },
+      {
+        "frage": "Kann Material für mehrere Plattformen aufbereitet werden?",
+        "antwort": "Ja. Aus einem Hauptfilm entstehen etwa Hochformat-Clips, Kurzfassungen, Untertitelversionen oder Exporte für Instagram, TikTok und YouTube."
+      },
+      {
+        "frage": "Wie schnell ist die Postproduktion fertig?",
+        "antwort": "Das hängt von Materialmenge, Filmlänge, Aufwand, VFX, Feedback und Anzahl der Versionen ab. Kleinere Projekte sind häufig in ein bis zwei Wochen abgeschlossen."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Material verstehen. Aufwand klar kalkulieren.",
+    "text": "Im kostenlosen Erstgespräch klären wir Materialmenge, Versionen, Look und Zeitplan."
+  }
+}

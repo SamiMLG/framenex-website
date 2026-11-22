@@ -1,0 +1,139 @@
+{
+  "seo": {
+    "titel": "FAQ – Häufige Fragen zu Video, Foto & Drohne | Framenex",
+    "beschreibung": "Antworten zu Videoproduktion, Fotografie, Drohnenaufnahmen, Postproduktion, Preisen, Lieferzeiten und Einsatzgebiet von Framenex.",
+    "ogTitel": "FAQ – Häufige Fragen | Framenex",
+    "ogBeschreibung": "Klare Antworten zu Video, Foto, Drohne, Postproduktion, Preisen und Buchung.",
+    "bild": "compressed/video_loading.webp"
+  },
+  "hero": {
+    "h1": "Fragen, klar beantwortet.",
+    "lead": "Buchung, Preise, Ablauf und Lieferung – von der reinen Videoproduktion bis zum Drohnenflug."
+  },
+  "themen": [
+    {
+      "id": "allgemein",
+      "titel": "Allgemein & Einsatzgebiet",
+      "fragen": [
+        {
+          "frage": "Bietet Framenex auch reine Videoproduktionen an?",
+          "antwort": "Ja. Video ist eine eigenständige Leistung und kein Zusatz zu einem Fotopaket."
+        },
+        {
+          "frage": "Ist das Erstgespräch kostenlos?",
+          "antwort": "Ja. Das erste Gespräch ist kostenlos und unverbindlich. Dabei klären wir Ziel, Einsatz, Umfang, Termin und den sinnvollsten Produktionsweg."
+        },
+        {
+          "frage": "Arbeitet Framenex in Wien und Niederösterreich?",
+          "antwort": "Ja. Niederösterreich ist der Heimatstandort – Produktionen rund um St. Pölten, im gesamten Bundesland und regelmäßig in Wien sind möglich."
+        },
+        {
+          "frage": "Kann Framenex österreichweit gebucht werden?",
+          "antwort": "Ja. Reise- und Logistikkosten werden vorab transparent im Angebot berücksichtigt."
+        },
+        {
+          "frage": "Wovon hängt der Preis eines Projekts ab?",
+          "antwort": "Unter anderem von Drehtagen, Locations, Crew, Kamera- und Drohnentechnik, Licht und Ton, Interviews, Konzept, Darstellern, Musiklizenzen, Animationen, Anzahl der Videos, Korrekturen und Reisekosten."
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "titel": "Videoproduktion",
+      "fragen": [
+        {
+          "frage": "Was kostet eine Videoproduktion?",
+          "antwort": "Social-Media-Clips sind je nach Umfang auch unter 500 € inkl. USt. möglich. Werbefilme liegen meist bei etwa 1.500–8.000 € inkl. USt., Kurzfilmproduktionen beginnen in der Regel ab 10.000 € inkl. USt. Jedes Projekt wird individuell kalkuliert."
+        },
+        {
+          "frage": "Produziert Framenex Imagefilme?",
+          "antwort": "Ja – auf Wunsch von der Konzeption über den Dreh bis zu Schnitt, Color Grading und finalen Versionen."
+        },
+        {
+          "frage": "Produziert Framenex Social-Media-Videos?",
+          "antwort": "Ja. Reels, Kampagnenclips, Event-Content und Produktvideos für Instagram, TikTok, YouTube und andere Plattformen."
+        },
+        {
+          "frage": "Kann ich nur einen Kameramann buchen?",
+          "antwort": "Ja. Kameraoperation ist einzeln buchbar – mit Sony-Setup, für High-End-Produktionen mit DJI Ronin 4D oder als Teil einer Multikamera-Produktion."
+        },
+        {
+          "frage": "Wie schnell bekomme ich mein Video?",
+          "antwort": "Social-Media-Videos und kleinere Projekte sind häufig innerhalb von ein bis zwei Wochen fertig. Termine werden vor Projektstart verbindlich abgestimmt."
+        },
+        {
+          "frage": "Sind Korrekturen enthalten?",
+          "antwort": "In der Regel zwei kleinere Korrekturschleifen. Eine vollständige kreative oder strukturelle Neuausrichtung wird individuell vereinbart."
+        },
+        {
+          "frage": "Bekomme ich das Video für Instagram, TikTok oder YouTube?",
+          "antwort": "Ja, wenn die Formate vorab vereinbart werden – etwa Hoch- und Querformat oder plattformspezifische Fassungen. Für TV und Kino gelten zusätzliche technische und lizenzrechtliche Anforderungen."
+        },
+        {
+          "frage": "Welche Kameratechnik verwendet Framenex?",
+          "antwort": "Professionelle Sony-Kameras für Foto und Video, eine DJI Ronin 4D für High-End-Filmproduktionen sowie Multikamera-Setups."
+        }
+      ]
+    },
+    {
+      "id": "drohne",
+      "titel": "Drohnenaufnahmen",
+      "fragen": [
+        {
+          "frage": "Bietet Framenex Drohnenaufnahmen an?",
+          "antwort": "Ja. 4K-Drohnenvideos und Luftbilder, sofern der Flug rechtlich, sicher und unter den Bedingungen vor Ort möglich ist."
+        },
+        {
+          "frage": "Kann ich nur Drohnenaufnahmen buchen?",
+          "antwort": "Ja. Eigenständig oder integriert in eine Video-, Foto- oder Immobilienproduktion."
+        },
+        {
+          "frage": "Was kostet ein Drohnenvideo?",
+          "antwort": "Der Preis richtet sich nach Flugort, Luftraum, Motiv, Genehmigungen, Anzahl der Starts, Anreise, Material und Postproduktion. Nach der kostenlosen Klärung erhalten Sie ein konkretes Angebot."
+        },
+        {
+          "frage": "Welche Drohne wird verwendet?",
+          "antwort": "Unter anderem eine DJI Mini 3 Pro – hochwertige 4K-Aufnahmen bei kompakter Bauweise. Eine rechtliche Prüfung des Flugorts ersetzt das nicht."
+        },
+        {
+          "frage": "Ist Framenex für Drohnenflüge qualifiziert und versichert?",
+          "antwort": "Ja. Vor jedem Auftrag werden Fluggebiet, Sicherheitsabstände und Rahmenbedingungen geprüft."
+        },
+        {
+          "frage": "Kann an jedem gewünschten Ort geflogen werden?",
+          "antwort": "Nein. Luftfahrt- und Datenschutzrecht, lokale Einschränkungen, Bewilligungen, Wetter und die Situation vor Ort können einen Flug begrenzen oder ausschließen."
+        }
+      ]
+    },
+    {
+      "id": "foto-post",
+      "titel": "Fotografie & Postproduktion",
+      "fragen": [
+        {
+          "frage": "Was kostet Eventfotografie?",
+          "antwort": "Ab 500 € inkl. USt. pro Tag beziehungsweise Abend. Dauer, Ort, Bildmenge, Bearbeitung und Anreise fließen ins Angebot ein."
+        },
+        {
+          "frage": "Kann Fotografie ohne Video gebucht werden?",
+          "antwort": "Ja. Unternehmens-, Event-, Hochzeits-, Portrait-, Architektur- und Dokumentationsfotografie sind eigenständig buchbar."
+        },
+        {
+          "frage": "Kann ich nur Videoschnitt buchen?",
+          "antwort": "Ja – auch für vorhandenes oder von einem anderen Team aufgenommenes Material."
+        },
+        {
+          "frage": "Welche Leistungen sind in der Postproduktion möglich?",
+          "antwort": "Videoschnitt, Color Grading, Sounddesign, Untertitel, Social-Media-Fassungen, Formatadaptionen, Exporte und VFX."
+        },
+        {
+          "frage": "Wie werden Fotos und Videos geliefert?",
+          "antwort": "Digital in den vorab vereinbarten Auflösungen und Formaten. Zusätzliche Seitenverhältnisse oder Plattformversionen werden bei der Planung festgelegt."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "titel": "Ihr Projekt ist individueller als jede FAQ.",
+    "text": "Im kostenlosen Erstgespräch klären wir Ziel, Machbarkeit, Umfang und den nächsten Schritt."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "lost-you",
+  "title": "Lost You",
+  "lead": "Ein cineastischer Kurzfilm über Trauer, Verlust und den Weg zurück ins Leben.",
+  "cardLabel": "Kurzfilm · Eigenproduktion",
+  "categories": [
+    "filmproduktionen"
+  ],
+  "layout": "wide",
+  "featured": true,
+  "cover": {
+    "src": "compressed/lostyou/lostyou3.webp",
+    "alt": "Filmszene aus dem Kurzfilm Lost You",
+    "width": 800,
+    "height": 342,
+    "position": "50% 48%",
+    "mobileSrc": "compressed/lostyou/lostyou3-mobile.webp"
+  },
+  "meta": {
+    "client": "Eigenproduktion · mit Maximilian Hübner",
+    "service": "Konzeption, Regie, Kamera & Postproduktion",
+    "industry": "Film & Kultur",
+    "location": "Retz, Niederösterreich"
+  },
+  "description": [
+    "Lost You begleitet den 16-jährigen Charly durch den Trauerprozess nach dem Verlust seines Vaters. Die Geschichte wird bewusst ruhig, nah und atmosphärisch erzählt.",
+    "Regie und Kamera entstanden gemeinsam mit Maximilian Hübner. Bildsprache, Rhythmus und Color Grading wurden so entwickelt, dass Charlys innere Welt spürbar bleibt."
+  ],
+  "facts": [
+    "Kamera: Sony A7C II & Sony A7S III",
+    "Postproduktion: DaVinci Resolve",
+    "Filmlänge: ca. 8 Minuten"
+  ],
+  "media": [
+    {
+      "type": "image",
+      "src": "compressed/lostyou/lostyou3.webp",
+      "alt": "Charly im Anzug auf einer Straße – Filmszene aus Lost You",
+      "width": 800,
+      "height": 342,
+      "mobileSrc": "compressed/lostyou/lostyou3-mobile.webp"
+    },
+    {
+      "type": "image",
+      "src": "compressed/lostyou/lostyou1.webp",
+      "alt": "Emotionales Close-up aus Lost You",
+      "width": 800,
+      "height": 342,
+      "mobileSrc": "compressed/lostyou/lostyou1-mobile.webp"
+    },
+    {
+      "type": "image",
+      "src": "compressed/lostyou/lostyou2.webp",
+      "alt": "Trauerszene aus dem Kurzfilm Lost You",
+      "width": 800,
+      "height": 342
+    },
+    {
+      "type": "youtube",
+      "id": "KFjceyu0w7Q",
+      "title": "Lost You – Kurzfilm ansehen"
+    }
+  ],
+  "order": 1
+}

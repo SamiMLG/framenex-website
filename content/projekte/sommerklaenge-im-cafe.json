@@ -1,0 +1,57 @@
+{
+  "id": "sommerklaenge-im-cafe",
+  "title": "Sommerklänge im Café",
+  "lead": "Ein intimer Konzertfilm mit drei Kameras – nah an Musik, Raum und Publikum.",
+  "cardLabel": "Konzertfilm · Multikamera",
+  "categories": [
+    "filmproduktionen"
+  ],
+  "layout": "standard",
+  "featured": false,
+  "cover": {
+    "src": "compressed/baumgartner/baumgartner1.webp",
+    "alt": "Hannah Baumgartner bei einem Konzert im Café",
+    "width": 800,
+    "height": 450,
+    "position": "50% 42%"
+  },
+  "meta": {
+    "client": "Hannah Baumgartner & Martin Wöber",
+    "service": "Konzertfilm, Multikamera & Postproduktion",
+    "industry": "Musik & Kultur",
+    "location": "Niederösterreich"
+  },
+  "description": [
+    "Ein Konzert an einem warmen Sommerabend, gespielt in einem kleinen Café: persönlich, unmittelbar und voller Atmosphäre.",
+    "Drei Kameras zeichneten gleichzeitig auf. Im Schnitt wurden Perspektiven, Musik und Publikumsreaktionen zu einem ruhigen, authentischen Konzertfilm verbunden."
+  ],
+  "facts": [
+    "Aufzeichnung mit drei Kameras",
+    "Synchronisation mehrerer Bild- und Tonspuren",
+    "Schnitt in DaVinci Resolve"
+  ],
+  "media": [
+    {
+      "type": "image",
+      "src": "compressed/baumgartner/baumgartner1.webp",
+      "alt": "Musikerin mit Gitarre bei Sommerklänge im Café",
+      "width": 800,
+      "height": 450
+    },
+    {
+      "type": "image",
+      "src": "compressed/baumgartner/baumgartner2.webp",
+      "alt": "Hannah Baumgartner und Martin Wöber beim Konzert",
+      "width": 800,
+      "height": 450
+    },
+    {
+      "type": "image",
+      "src": "compressed/baumgartner/baumgartner3.webp",
+      "alt": "Konzertaufnahme vor Publikum im Freien",
+      "width": 800,
+      "height": 450
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "titel": "Fotografie Wien & Niederösterreich | Framenex",
+    "beschreibung": "Professionelle Fotografie für Unternehmen, Events, Hochzeiten, Portraits, Architektur und Bauprojekte in Wien, Niederösterreich und ganz Österreich.",
+    "bild": "compressed/hochzeit/hochzeit1.webp",
+    "schemaName": "Fotografie in Wien & Niederösterreich"
+  },
+  "hero": {
+    "h1": "Fotografie in Wien & Niederösterreich",
+    "leistung": "Fotografie",
+    "lead": "Professionelle Fotografie für Unternehmen, Events, Hochzeiten und dokumentarische Projekte – authentisch, klar und passend zum Einsatz. Eigenständig oder mit Video kombiniert.",
+    "bild": "compressed/hochzeit/hochzeit1.webp",
+    "bildMobil": "",
+    "alt": "Event- und Hochzeitsfotografie von Framenex"
+  },
+  "umfang": {
+    "titel": "Bilder, die zu Anlass und Marke passen.",
+    "text": "Unaufdringlich dokumentarisch oder klar inszeniert – je nachdem, was das Projekt braucht.",
+    "punkte": [
+      "Unternehmensfotografie",
+      "Eventfotografie",
+      "Hochzeitsfotografie",
+      "Portraitfotografie",
+      "Architekturfotografie",
+      "Baufortschrittsaufnahmen",
+      "Social-Media-Fotografie",
+      "Individuelle Fotoprojekte"
+    ]
+  },
+  "ablauf": {
+    "eyebrow": "Ablauf",
+    "titel": "Vom Briefing bis zur fertigen Bildauswahl.",
+    "text": "Fotografiert wird mit professionellen Sony-Kameras und passendem Licht-Setup.",
+    "schritte": [
+      "Briefing & Shotlist",
+      "Fotografie vor Ort",
+      "Bildauswahl",
+      "Farblook & Bearbeitung",
+      "Web- und Druckformate",
+      "Digitale Übergabe"
+    ],
+    "hinweis": ""
+  },
+  "preise": {
+    "anzeigen": true,
+    "titel": "Transparent, aber nicht von der Stange.",
+    "text": "Der Preis richtet sich nach Dauer, Ort, Bildmenge und Bearbeitungsumfang.",
+    "zeilen": [
+      {
+        "leistung": "Eventfotografie",
+        "preis": "ab 500 € pro Tag bzw. Abend"
+      },
+      {
+        "leistung": "Weitere Fotoproduktionen",
+        "preis": "individuell nach Umfang"
+      }
+    ],
+    "hinweis": "Alle Preise inkl. USt. Das verbindliche Angebot folgt nach dem kostenlosen Erstgespräch."
+  },
+  "story": {
+    "eyebrow": "Fotografie",
+    "titel": "Echte Situationen, bewusst gestaltet.",
+    "absaetze": [
+      "Bei Events und Hochzeiten zählt der richtige Moment. Für Unternehmen, Architektur und Bauprojekte zusätzlich klare Linien und wiedererkennbare Bildserien.",
+      "Fotoproduktionen sind in Wien, Niederösterreich, rund um St. Pölten und österreichweit möglich."
+    ],
+    "bilder": [
+      {
+        "bild": "compressed/hochzeit/hochzeit2.webp",
+        "bildMobil": "compressed/hochzeit/hochzeit2-600.webp",
+        "alt": "Detailaufnahme einer Hochzeit"
+      },
+      {
+        "bild": "compressed/docks/docks1.webp",
+        "bildMobil": "",
+        "alt": "Architektur- und Baufortschrittsfotografie in Wien"
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Fragen zur Fotografie.",
+    "intro": "Buchung, Preise, Einsatzgebiet und Bildübergabe.",
+    "fragen": [
+      {
+        "frage": "Kann Fotografie ohne Video gebucht werden?",
+        "antwort": "Ja. Fotografie ist eine eigenständige Leistung – für Unternehmen, Events, Hochzeiten, Portraits, Immobilien sowie Bau- und Projektdokumentationen."
+      },
+      {
+        "frage": "Was kostet Eventfotografie?",
+        "antwort": "Eventfotografie beginnt bei 500 € inkl. USt. pro Tag beziehungsweise Abend. Dauer, Ort, Bildmenge, Bearbeitung und Anreise beeinflussen das Angebot."
+      },
+      {
+        "frage": "Welche Kameras werden verwendet?",
+        "antwort": "Professionelle Sony-Kameras mit einem zum Einsatz passenden Objektiv- und Lichtsetup."
+      },
+      {
+        "frage": "Arbeitet Framenex auch in Wien?",
+        "antwort": "Ja. Aufträge sind in Wien, Niederösterreich und österreichweit möglich."
+      },
+      {
+        "frage": "Wie werden die Bilder geliefert?",
+        "antwort": "Die bearbeitete Auswahl wird digital in den vereinbarten Auflösungen bereitgestellt. Umfang und Liefertermin werden vorab festgelegt."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Bedarf klären. Dann fair anbieten.",
+    "text": "Im kostenlosen Erstgespräch klären wir Anlass, Dauer, Ort und Bildumfang."
+  }
+}

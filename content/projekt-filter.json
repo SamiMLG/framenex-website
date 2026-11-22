@@ -1,0 +1,20 @@
+{
+  "filters": [
+    {
+      "id": "all",
+      "label": "Alle"
+    },
+    {
+      "id": "filmproduktionen",
+      "label": "Filmproduktionen"
+    },
+    {
+      "id": "hochzeiten",
+      "label": "Hochzeiten"
+    },
+    {
+      "id": "immobilien",
+      "label": "Immobilien"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "seo": {
+    "titel": "Leistungen – Video, Foto, Drohne & Postproduktion | Framenex",
+    "beschreibung": "Alle Framenex Leistungen im Überblick: Videoproduktion, Fotografie, Drohnenaufnahmen und Postproduktion – einzeln buchbar in Wien, Niederösterreich und österreichweit.",
+    "bild": "compressed/lostyou/lostyou3.webp"
+  },
+  "hero": {
+    "h1": "Film, Foto und neue Perspektiven.",
+    "lead": "Videoproduktion, Fotografie, Drohnenaufnahmen und Postproduktion in Wien und Niederösterreich – jede Leistung eigenständig buchbar, für größere Projekte nahtlos kombiniert."
+  },
+  "zeilen": [
+    {
+      "seite": "videoproduktion",
+      "titel": "Videoproduktion",
+      "linkText": "Zur Videoproduktion",
+      "text": "Professionelle Videos für Unternehmen, Marken, Events und private Projekte – von der Idee bis zum finalen Export.",
+      "stichworte": "Imagefilm · Werbefilm · Social Media · Reels · Eventfilm · Aftermovie · Produktvideo · Kurzfilm",
+      "bild": "compressed/lostyou/lostyou3.webp",
+      "bildMobil": "compressed/lostyou/lostyou3-mobile.webp",
+      "alt": "Cineastische Videoproduktion"
+    },
+    {
+      "seite": "fotografie",
+      "titel": "Fotografie",
+      "linkText": "Zur Fotografie",
+      "text": "Klare, authentische Bilder für Unternehmen, Events, Hochzeiten, Portraits und dokumentarische Projekte.",
+      "stichworte": "Unternehmen · Events · Hochzeiten · Portrait · Architektur & Bau",
+      "bild": "compressed/hochzeit/hochzeit1.webp",
+      "bildMobil": "",
+      "alt": "Event- und Hochzeitsfotografie"
+    },
+    {
+      "seite": "drohnenaufnahmen",
+      "titel": "Drohnenaufnahmen",
+      "linkText": "Zu den Drohnenaufnahmen",
+      "text": "4K-Drohnenvideo und Luftbilder für Immobilien, Events, Baufortschritt, Werbung und Social Media.",
+      "stichworte": "Drohnenvideo · Luftbilder · Immobilien · Events · Baufortschritt",
+      "bild": "compressed/side-photo-mobile.webp",
+      "bildMobil": "compressed/side-photo-800.webp",
+      "alt": "Drohnenaufnahme eines Bauprojekts"
+    },
+    {
+      "seite": "postproduktion",
+      "titel": "Postproduktion",
+      "linkText": "Zur Postproduktion",
+      "text": "Aus Rohmaterial entsteht eine präzise erzählte, stimmige und kanalgerechte finale Version.",
+      "stichworte": "Videoschnitt · Color Grading · Sounddesign · Untertitel · Social Clips · VFX",
+      "bild": "compressed/lostyou/lostyou1.webp",
+      "bildMobil": "compressed/lostyou/lostyou1-mobile.webp",
+      "alt": "Filmstill als Beispiel für Postproduktion"
+    }
+  ],
+  "preis": {
+    "titel": "Individuell kalkuliert. Klar nachvollziehbar.",
+    "text": "Keine starren Pakete: Jedes Angebot richtet sich nach Ziel, Umfang und den realen Produktionsbedingungen.",
+    "faktoren": [
+      {
+        "label": "Produktion",
+        "wert": "Drehtage · Locations · Crew"
+      },
+      {
+        "label": "Technik",
+        "wert": "Kamera · Drohne · Licht & Ton · Interview-Setup"
+      },
+      {
+        "label": "Konzept & Gestaltung",
+        "wert": "Konzept · Darsteller · Musiklizenzen · Animationen"
+      },
+      {
+        "label": "Lieferumfang",
+        "wert": "Anzahl der Videos · Korrekturen · Reisekosten"
+      }
+    ],
+    "hinweis": "Alle Preisbeispiele auf den Leistungsseiten verstehen sich inkl. USt."
+  },
+  "faq": {
+    "titel": "Fragen zur Buchung.",
+    "intro": "Kombination, Kalkulation und Einsatzgebiet.",
+    "fragen": [
+      {
+        "frage": "Kann jede Leistung einzeln gebucht werden?",
+        "antwort": "Ja. Videoproduktion, Fotografie, Drohnenaufnahmen und Postproduktion sind eigenständige Leistungen und lassen sich für größere Projekte kombinieren."
+      },
+      {
+        "frage": "Ist das Erstgespräch kostenlos?",
+        "antwort": "Ja. Das erste Gespräch ist kostenlos und unverbindlich. Danach wird der Umfang eingeordnet und ein individuelles Angebot erstellt."
+      },
+      {
+        "frage": "Wovon hängt der Preis ab?",
+        "antwort": "Unter anderem von Drehtagen, Locations, Crew, Technik, Konzept, Darstellern, Musiklizenzen, Animationen, Lieferumfang, Korrekturen und Reiseaufwand."
+      },
+      {
+        "frage": "Sind die genannten Preise inklusive Umsatzsteuer?",
+        "antwort": "Ja. Alle Preisbeispiele auf den Leistungsseiten verstehen sich inklusive Umsatzsteuer."
+      },
+      {
+        "frage": "Ist Framenex nur in Niederösterreich buchbar?",
+        "antwort": "Nein. Framenex ist in Niederösterreich zuhause, arbeitet regelmäßig in Wien und ist österreichweit buchbar."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Erst verstehen. Dann fair kalkulieren.",
+    "text": "Im kostenlosen Erstgespräch klären wir Ziel, Umfang und den passenden Produktionsweg."
+  }
+}

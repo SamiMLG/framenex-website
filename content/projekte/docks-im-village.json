@@ -1,0 +1,57 @@
+{
+  "id": "docks-im-village",
+  "title": "Die Docks im Village",
+  "lead": "Mehrmonatige Baufortschritts- und Architekturfotografie im dritten Wiener Gemeindebezirk.",
+  "cardLabel": "Architektur · Baufortschritt",
+  "categories": [
+    "immobilien"
+  ],
+  "layout": "half",
+  "featured": false,
+  "cover": {
+    "src": "compressed/docks/docks1.webp",
+    "alt": "Die Docks im Village im Dritten in Wien",
+    "width": 800,
+    "height": 600,
+    "position": "50% 48%"
+  },
+  "meta": {
+    "client": "Rubner Holzbau",
+    "service": "Baufortschritts- & Architekturfotografie",
+    "industry": "Immobilien & Holzbau",
+    "location": "Wien, 3. Bezirk"
+  },
+  "description": [
+    "Im Rahmen des Stadtentwicklungsprojekts Village im Dritten wurde der Baufortschritt der Docks über mehrere Monate fotografisch begleitet.",
+    "Die Serie zeigt sowohl die Entwicklung des geschwungenen Holzgebäudes als auch seine finale architektonische Wirkung und Funktion als Schallschutz."
+  ],
+  "facts": [
+    "Mehrmonatige Dokumentation",
+    "Baufortschritt und finale Architektur",
+    "Holzbau von Rubner"
+  ],
+  "media": [
+    {
+      "type": "image",
+      "src": "compressed/docks/docks1.webp",
+      "alt": "Geschwungene Fassade der Docks während der Bauphase",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "type": "image",
+      "src": "compressed/docks/docks2.webp",
+      "alt": "Übersicht der Docks im Village im Dritten",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "type": "image",
+      "src": "compressed/docks/docks3.webp",
+      "alt": "Luftansicht des Stadtentwicklungsprojekts in Wien",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "order": 5
+}

@@ -1,0 +1,100 @@
+{
+  "seo": {
+    "titel": "Drohnenaufnahmen Wien & Niederösterreich | Framenex",
+    "beschreibung": "Drohnenaufnahmen in Wien und Niederösterreich: 4K Drohnenvideo, Luftbilder, Immobilien-, Event- und Baufortschrittsaufnahmen mit qualifiziertem und versichertem Betrieb.",
+    "bild": "compressed/side-photo-mobile.webp",
+    "schemaName": "Drohnenaufnahmen in Wien und Niederösterreich"
+  },
+  "hero": {
+    "h1": "Drohnenaufnahmen in Wien & Niederösterreich",
+    "leistung": "Drohne",
+    "lead": "4K-Drohnenvideo und Luftbilder für Immobilien, Unternehmen, Events, Baufortschritt, Werbefilme und Social Media – separat buchbar oder Teil einer Produktion.",
+    "bild": "compressed/side-photo-mobile.webp",
+    "bildMobil": "compressed/side-photo-800.webp",
+    "alt": "Drohnenaufnahme eines Bauprojekts in Niederösterreich"
+  },
+  "umfang": {
+    "titel": "Übersicht, Dynamik und räumlicher Kontext.",
+    "text": "Als einzelner Termin oder integriert in Werbefilm, Imagefilm, Eventfilm oder Social-Media-Content.",
+    "punkte": [
+      "4K Drohnenvideo",
+      "Luftbilder",
+      "Immobilienaufnahmen",
+      "Eventaufnahmen",
+      "Baufortschrittsaufnahmen",
+      "Werbefilm-Aufnahmen",
+      "Social Media Drohnenclips",
+      "Individuelle Luftaufnahmen"
+    ]
+  },
+  "ablauf": {
+    "eyebrow": "Machbarkeit",
+    "titel": "Vor jedem Flug wird geprüft.",
+    "text": "Nicht jeder Ort ist automatisch befliegbar. Vor einer Zusage werden Einsatzort und Rahmenbedingungen geklärt.",
+    "schritte": [
+      "Luftraum & Schutzzonen",
+      "Örtliche Freigaben",
+      "Wetter & Sicht",
+      "Sicherheitsabstände",
+      "Zeitfenster & Umgebung",
+      "Produktionsziel"
+    ],
+    "hinweis": "Drohnenflüge sind durch gesetzliche Vorgaben und die Bedingungen vor Ort begrenzt. Ein Einsatz kann eingeschränkt, verschoben oder in einzelnen Fällen ausgeschlossen sein."
+  },
+  "preise": {
+    "anzeigen": false,
+    "titel": "",
+    "text": "",
+    "zeilen": [],
+    "hinweis": ""
+  },
+  "story": {
+    "eyebrow": "Technik & Sicherheit",
+    "titel": "DJI Mini 3 Pro – kompakt und flexibel.",
+    "absaetze": [
+      "Die DJI Mini 3 Pro liefert hochwertige 4K-Aufnahmen und ist durch ihre geringe Größe besonders praktisch – auch im urbanen Raum, sofern der Flug rechtlich und örtlich möglich ist.",
+      "Die erforderliche Drohnenqualifikation ist vorhanden, der Drohnenbetrieb ist ordnungsgemäß versichert."
+    ],
+    "bilder": [
+      {
+        "bild": "compressed/docks/docks3.webp",
+        "bildMobil": "",
+        "alt": "Luftaufnahme eines großen Bauprojekts in Wien"
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Fragen zu Drohnenaufnahmen.",
+    "intro": "Technik, Machbarkeit, Recht, Versicherung und Kosten.",
+    "fragen": [
+      {
+        "frage": "Kann ich nur Drohnenaufnahmen buchen?",
+        "antwort": "Ja. 4K-Drohnenvideo und Luftbilder sind eigenständig buchbar und lassen sich ebenso in Video-, Foto- oder Immobilienproduktionen integrieren."
+      },
+      {
+        "frage": "Was kostet ein Drohnenvideo?",
+        "antwort": "Der Preis hängt von Flugort, Luftraum, Motiv, Bewilligungen, Anzahl der Starts, Anreise, Lieferumfang und Postproduktion ab. Nach der kostenlosen Prüfung erhalten Sie ein individuelles Angebot."
+      },
+      {
+        "frage": "Welche Drohne verwendet Framenex?",
+        "antwort": "Unter anderem eine DJI Mini 3 Pro – hochwertige 4K-Aufnahmen bei kompakter Bauweise und hoher Flexibilität."
+      },
+      {
+        "frage": "Ist Framenex qualifiziert und versichert?",
+        "antwort": "Ja. Die erforderliche Qualifikation ist vorhanden und Drohneneinsätze sind entsprechend versichert."
+      },
+      {
+        "frage": "Kann überall geflogen werden?",
+        "antwort": "Nein. Rechtliche Vorgaben, Luftraum, Sicherheitsabstände, Bewilligungen, Datenschutz, Wetter und die konkrete Location können einen Flug einschränken oder verhindern."
+      },
+      {
+        "frage": "Sind Drohnenaufnahmen für Immobilien und Baufortschritt möglich?",
+        "antwort": "Ja – ebenso für Architektur, Events, Werbefilme und Social Media, sofern der Flug vor Ort möglich ist."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Machbarkeit klären. Dann sicher planen.",
+    "text": "Im kostenlosen Erstgespräch prüfen wir Einsatzort, Ziel und Rahmenbedingungen."
+  }
+}

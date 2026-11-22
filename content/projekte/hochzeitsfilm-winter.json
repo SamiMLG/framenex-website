@@ -1,0 +1,58 @@
+{
+  "id": "hochzeitsfilm-winter",
+  "title": "Hochzeitsfilm Martin & Rosemarie Winter",
+  "lead": "Eine ganztägige filmische Begleitung – vom Getting Ready bis zur Feier am Abend.",
+  "cardLabel": "Hochzeit · Videografie",
+  "categories": [
+    "hochzeiten",
+    "filmproduktionen"
+  ],
+  "layout": "standard",
+  "featured": true,
+  "cover": {
+    "src": "compressed/hochzeit/hochzeit1.webp",
+    "alt": "Martin und Rosemarie Winter während ihrer Hochzeit",
+    "width": 800,
+    "height": 534,
+    "position": "50% 44%"
+  },
+  "meta": {
+    "client": "Martin & Rosemarie Winter",
+    "service": "Hochzeitsvideografie & Postproduktion",
+    "industry": "Hochzeit & Event",
+    "location": "Niederösterreich · private Feier"
+  },
+  "description": [
+    "Am 24. August 2024 wurde der gesamte Hochzeitstag begleitet – von den Vorbereitungen über die Trauung bis zur ausgelassenen Abendfeier.",
+    "Der fertige Film verbindet große Momente und kleine Gesten zu einer persönlichen Erinnerung, ohne den natürlichen Ablauf des Tages zu unterbrechen."
+  ],
+  "facts": [
+    "Ganztägige Begleitung",
+    "Authentische Ton- und Bildmomente",
+    "Individueller Hochzeitsfilm"
+  ],
+  "media": [
+    {
+      "type": "image",
+      "src": "compressed/hochzeit/hochzeit1.webp",
+      "alt": "Brautpaar während der Hochzeitszeremonie",
+      "width": 800,
+      "height": 534
+    },
+    {
+      "type": "image",
+      "src": "compressed/hochzeit/hochzeit2.webp",
+      "alt": "Detailaufnahme beim Anschneiden des Hochzeitsbrotes",
+      "width": 800,
+      "height": 534
+    },
+    {
+      "type": "image",
+      "src": "compressed/hochzeit/hochzeit3.webp",
+      "alt": "Musiker und Brautpaar bei der Hochzeitsfeier",
+      "width": 800,
+      "height": 533
+    }
+  ],
+  "order": 3
+}

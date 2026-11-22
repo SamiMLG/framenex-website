@@ -1,0 +1,28 @@
+{
+  "partner": [
+    {
+      "name": "Madradt Productions e.U",
+      "url": "https://www.videoproduktion-madradt.com/",
+      "logo": "partner/madtradt-logo.webp",
+      "darstellung": "standard"
+    },
+    {
+      "name": "Rubner Holzbau GmbH",
+      "url": "https://www.rubner.com/de/",
+      "logo": "partner/rubner_logo.png",
+      "darstellung": "breit"
+    },
+    {
+      "name": "Labra Media",
+      "url": "https://www.labramedia.com/",
+      "logo": "partner/labramedia_logo.webp",
+      "darstellung": "standard"
+    },
+    {
+      "name": "Edelsteinpark Arena Pöggstall",
+      "url": "https://www.edelsteinpark.at/",
+      "logo": "partner/edelsteinpark-poeggstall-logo.webp",
+      "darstellung": "heller-hintergrund"
+    }
+  ]
+}

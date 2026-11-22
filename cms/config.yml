@@ -1,0 +1,1631 @@
+# Framenex CMS (Sveltia CMS) – runs on cms.framenex.com, protected by Cloudflare Access.
+# Every save becomes a commit in GitHub; Cloudflare Pages then rebuilds framenex.com (~1 minute).
+# (Generated with shared field groups expanded – edit carefully.)
+
+backend:
+  name: github
+  repo: DEIN-GITHUB-NAME/framenex-website
+  branch: main
+  commit_messages:
+    create: "CMS: {{collection}} „{{slug}}“ angelegt"
+    update: "CMS: {{collection}} „{{slug}}“ geändert"
+    delete: "CMS: {{collection}} „{{slug}}“ gelöscht"
+    uploadMedia: "CMS: Bild {{path}} hochgeladen"
+    deleteMedia: "CMS: Bild {{path}} gelöscht"
+site_url: https://framenex.com
+display_url: https://framenex.com
+locale: de
+media_folder: src/media
+public_folder: /media
+collections:
+  - name: projekte
+    label: Referenzen (Galerie)
+    label_singular: Projekt
+    description: Projekte auf der Referenzen-Seite. Reihenfolge über das Feld „Reihenfolge“.
+    folder: content/projekte
+    format: json
+    create: true
+    delete: true
+    slug: "{{fields.id}}"
+    identifier_field: title
+    summary: "{{fields.order}} · {{fields.title}}"
+    sortable_fields:
+      - order
+      - title
+    fields:
+      - label: Titel
+        name: title
+        widget: string
+      - label: Kurzname für die Adresse (klein
+        ohne Leerzeichen: null
+        z. B. „hochzeit-mueller“): null
+        name: id
+        widget: string
+        pattern:
+          - ^[a-z0-9-]+$
+          - Nur Kleinbuchstaben, Zahlen und Bindestriche
+      - label: Reihenfolge
+        name: order
+        widget: number
+        value_type: int
+        hint: 1 = ganz oben
+      - label: Ausblenden
+        name: hidden
+        widget: boolean
+        required: false
+        default: false
+      - label: Kategorie-Zeile (z. B. „Kurzfilm · Eigenproduktion“)
+        name: cardLabel
+        widget: string
+      - label: Kurzbeschreibung
+        name: lead
+        widget: text
+      - label: Filter
+        name: categories
+        widget: relation
+        collection: einstellungen
+        file: filter
+        value_field: filters.*.id
+        display_fields:
+          - filters.*.label
+        multiple: true
+        hint: Nicht „Alle“ auswählen – das gilt automatisch.
+      - label: Breites Layout
+        name: layout
+        widget: select
+        options:
+          - standard
+          - wide
+        default: standard
+      - label: Hervorgehoben
+        name: featured
+        widget: boolean
+        required: false
+        default: false
+      - label: Titelbild
+        name: cover
+        widget: object
+        fields:
+          - label: Bild
+            name: src
+            widget: image
+          - label: Handy-Version (optional)
+            name: mobileSrc
+            widget: image
+            required: false
+          - label: Bildbeschreibung
+            name: alt
+            widget: string
+          - label: Bildausschnitt (optional
+            z. B. „50% 40%“): null
+            name: position
+            widget: string
+            required: false
+          - name: width
+            widget: hidden
+            required: false
+          - name: height
+            widget: hidden
+            required: false
+      - label: Projektdaten
+        name: meta
+        widget: object
+        fields:
+          - label: Kunde
+            name: client
+            widget: string
+            required: false
+          - label: Leistung
+            name: service
+            widget: string
+            required: false
+          - label: Branche
+            name: industry
+            widget: string
+            required: false
+          - label: Ort
+            name: location
+            widget: string
+            required: false
+      - label: Beschreibung (Absätze)
+        name: description
+        widget: list
+        required: false
+        field:
+          label: Absatz
+          name: absatz
+          widget: text
+      - label: Fakten (Aufzählung)
+        name: facts
+        widget: list
+        required: false
+        field:
+          label: Fakt
+          name: fakt
+          widget: string
+      - label: Externer Link (optional)
+        name: externalLink
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - label: Linktext
+            name: label
+            widget: string
+            required: false
+          - label: Adresse
+            name: href
+            widget: string
+            required: false
+      - label: Galerie (Bilder & Videos)
+        name: media
+        widget: list
+        typeKey: type
+        types:
+          - label: Bild
+            name: image
+            widget: object
+            summary: "{{fields.alt}}"
+            fields:
+              - label: Bild
+                name: src
+                widget: image
+              - label: Handy-Version (optional)
+                name: mobileSrc
+                widget: image
+                required: false
+              - label: Bildbeschreibung
+                name: alt
+                widget: string
+              - name: width
+                widget: hidden
+                required: false
+              - name: height
+                widget: hidden
+                required: false
+          - label: YouTube-Video
+            name: youtube
+            widget: object
+            summary: ▶ {{fields.title}}
+            fields:
+              - label: YouTube-ID (z. B. „KFjceyu0w7Q“ aus youtube.com/watch?v=KFjceyu0w7Q)
+                name: id
+                widget: string
+              - label: Titel
+                name: title
+                widget: string
+  - name: seiten
+    label: Seiten
+    files:
+      - name: startseite
+        label: Startseite
+        file: content/seiten/startseite.json
+        fields:
+          - label: Google / SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Seitentitel (Browser-Tab & Google)
+                name: titel
+                widget: string
+              - label: Beschreibung (Google-Snippet
+                ca. 150 Zeichen): null
+                name: beschreibung
+                widget: text
+              - label: Vorschaubild für Social Media
+                name: bild
+                widget: image
+                required: false
+              - label: Leistungsname für Google (strukturierte Daten)
+                name: schemaName
+                widget: string
+                required: false
+              - label: Social-Media-Titel (optional)
+                name: ogTitel
+                widget: string
+                required: false
+              - label: Social-Media-Beschreibung (optional)
+                name: ogBeschreibung
+                widget: text
+                required: false
+          - label: Hero (Video oben)
+            name: hero
+            widget: object
+            fields:
+              - label: Kleine Zeile oben
+                name: eyebrow
+                widget: string
+              - label: Markenname (farbig)
+                name: titelMarke
+                widget: string
+              - label: Überschrift (nach dem Markennamen)
+                name: titel
+                widget: string
+              - label: Untertitel
+                name: untertitel
+                widget: text
+              - label: Button 1
+                name: buttonPrimaer
+                widget: string
+              - label: Button 2
+                name: buttonSekundaer
+                widget: string
+              - label: Standbild Desktop (erstes Videobild
+                16:9): null
+                name: poster
+                widget: image
+              - label: Standbild Handy (optional
+                sonst automatisch 9:16 aus dem Desktop-Bild): null
+                name: posterMobil
+                widget: image
+                required: false
+              - label: Video AV1 (.webm
+                Adresse): null
+                name: videoAv1
+                widget: string
+              - label: Video HEVC (.mp4
+                Adresse): null
+                name: videoH265
+                widget: string
+              - label: Video H.264 (.mp4
+                Adresse): null
+                name: videoH264
+                widget: string
+          - label: Leistungen
+            name: leistungen
+            widget: object
+            collapsed: true
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: text
+              - label: Karten
+                name: karten
+                widget: list
+                min: 4
+                max: 4
+                summary: "{{fields.titel}}"
+                fields:
+                  - label: Seite
+                    name: seite
+                    widget: hidden
+                  - label: Titel
+                    name: titel
+                    widget: string
+                  - label: Text
+                    name: text
+                    widget: text
+                  - label: Bild
+                    name: bild
+                    widget: image
+                    hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+                  - label: Handy-Version (optional)
+                    name: bildMobil
+                    widget: image
+                    required: false
+                    hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+                  - label: Bildbeschreibung (für Google & Screenreader)
+                    name: alt
+                    widget: string
+          - label: Ausgewählte Arbeiten
+            name: arbeiten
+            widget: object
+            collapsed: true
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: text
+              - label: Projekte (3)
+                name: projekte
+                widget: list
+                min: 3
+                max: 3
+                summary: "{{fields.titel}}"
+                fields:
+                  - label: Öffnet Projekt
+                    name: projekt
+                    widget: relation
+                    collection: projekte
+                    value_field: id
+                    search_fields:
+                      - title
+                    display_fields:
+                      - title
+                  - label: Kategorie
+                    name: label
+                    widget: string
+                  - label: Titel
+                    name: titel
+                    widget: string
+                  - label: Bild
+                    name: bild
+                    widget: image
+                    hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+                  - label: Handy-Version (optional)
+                    name: bildMobil
+                    widget: image
+                    required: false
+                    hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+                  - label: Bildbeschreibung (für Google & Screenreader)
+                    name: alt
+                    widget: string
+          - label: Ablauf
+            name: ablauf
+            widget: object
+            collapsed: true
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: text
+              - label: Schritte
+                name: schritte
+                widget: list
+                summary: "{{fields.titel}}"
+                fields:
+                  - label: Titel
+                    name: titel
+                    widget: string
+                  - label: Text
+                    name: text
+                    widget: text
+          - label: Überschrift Partner-Bereich
+            name: partnerTitel
+            widget: string
+          - label: Über mich
+            name: ueberMich
+            widget: object
+            collapsed: true
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Name
+                name: name
+                widget: string
+              - label: Untertitel
+                name: lead
+                widget: string
+              - label: Absätze
+                name: absaetze
+                widget: list
+                field:
+                  label: Absatz
+                  name: absatz
+                  widget: text
+              - label: Fakten
+                name: fakten
+                widget: list
+                summary: "{{fields.label}}: {{fields.wert}}"
+                fields:
+                  - label: Bezeichnung
+                    name: label
+                    widget: string
+                  - label: Wert
+                    name: wert
+                    widget: string
+              - label: Porträt schwarz-weiß (4:5)
+                name: portraitSw
+                widget: image
+              - label: Porträt Farbe (4:5
+                gleicher Ausschnitt): null
+                name: portraitFarbe
+                widget: image
+              - label: Bildbeschreibung
+                name: alt
+                widget: string
+              - label: Foto-Credit
+                name: fotoCredit
+                widget: string
+                required: false
+              - name: portraitBreite
+                widget: hidden
+                required: false
+              - name: portraitHoehe
+                widget: hidden
+                required: false
+          - label: Häufige Fragen
+            name: faq
+            widget: object
+            collapsed: true
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: string
+              - label: Fragen
+                name: fragen
+                widget: list
+                summary: "{{fields.frage}}"
+                fields:
+                  - label: Frage
+                    name: frage
+                    widget: string
+                  - label: Antwort
+                    name: antwort
+                    widget: text
+      - name: videoproduktion
+        label: Videoproduktion
+        file: content/seiten/videoproduktion.json
+        fields:
+          - label: Google / SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Seitentitel (Browser-Tab & Google)
+                name: titel
+                widget: string
+              - label: Beschreibung (Google-Snippet
+                ca. 150 Zeichen): null
+                name: beschreibung
+                widget: text
+              - label: Vorschaubild für Social Media
+                name: bild
+                widget: image
+                required: false
+              - label: Leistungsname für Google (strukturierte Daten)
+                name: schemaName
+                widget: string
+                required: false
+              - label: Social-Media-Titel (optional)
+                name: ogTitel
+                widget: string
+                required: false
+              - label: Social-Media-Beschreibung (optional)
+                name: ogBeschreibung
+                widget: text
+                required: false
+          - label: Kopfbereich
+            name: hero
+            widget: object
+            fields:
+              - label: Überschrift (H1)
+                name: h1
+                widget: string
+              - label: Einleitung
+                name: lead
+                widget: text
+              - label: Vorauswahl im Kontaktformular
+                name: leistung
+                widget: hidden
+              - label: Bild
+                name: bild
+                widget: image
+                hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+              - label: Handy-Version (optional)
+                name: bildMobil
+                widget: image
+                required: false
+                hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+              - label: Bildbeschreibung (für Google & Screenreader)
+                name: alt
+                widget: string
+          - label: Leistungsumfang
+            name: umfang
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Punkte
+                name: punkte
+                widget: list
+                field:
+                  label: Punkt
+                  name: punkt
+                  widget: string
+          - label: Ablauf
+            name: ablauf
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Schritte
+                name: schritte
+                widget: list
+                field:
+                  label: Schritt
+                  name: schritt
+                  widget: string
+              - label: Hinweis-Box (optional)
+                name: hinweis
+                widget: text
+                required: false
+          - label: Preise
+            name: preise
+            widget: object
+            fields:
+              - label: Preisbereich anzeigen
+                name: anzeigen
+                widget: boolean
+              - label: Überschrift
+                name: titel
+                widget: string
+                required: false
+              - label: Text
+                name: text
+                widget: text
+                required: false
+              - label: Preiszeilen
+                name: zeilen
+                widget: list
+                required: false
+                summary: "{{fields.leistung}}: {{fields.preis}}"
+                fields:
+                  - label: Leistung
+                    name: leistung
+                    widget: string
+                  - label: Preis
+                    name: preis
+                    widget: string
+              - label: Hinweis
+                name: hinweis
+                widget: text
+                required: false
+          - label: Text mit Bildern
+            name: story
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Absätze
+                name: absaetze
+                widget: list
+                field:
+                  label: Absatz
+                  name: absatz
+                  widget: text
+              - label: Bilder (1 oder 2)
+                name: bilder
+                widget: list
+                max: 2
+                fields:
+                  - label: Bild
+                    name: bild
+                    widget: image
+                    hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+                  - label: Handy-Version (optional)
+                    name: bildMobil
+                    widget: image
+                    required: false
+                    hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+                  - label: Bildbeschreibung (für Google & Screenreader)
+                    name: alt
+                    widget: string
+          - label: Häufige Fragen
+            name: faq
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: string
+              - label: Fragen
+                name: fragen
+                widget: list
+                summary: "{{fields.frage}}"
+                fields:
+                  - label: Frage
+                    name: frage
+                    widget: string
+                  - label: Antwort
+                    name: antwort
+                    widget: text
+          - label: Abschluss (Call to Action)
+            name: cta
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+      - name: fotografie
+        label: Fotografie
+        file: content/seiten/fotografie.json
+        fields:
+          - label: Google / SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Seitentitel (Browser-Tab & Google)
+                name: titel
+                widget: string
+              - label: Beschreibung (Google-Snippet
+                ca. 150 Zeichen): null
+                name: beschreibung
+                widget: text
+              - label: Vorschaubild für Social Media
+                name: bild
+                widget: image
+                required: false
+              - label: Leistungsname für Google (strukturierte Daten)
+                name: schemaName
+                widget: string
+                required: false
+              - label: Social-Media-Titel (optional)
+                name: ogTitel
+                widget: string
+                required: false
+              - label: Social-Media-Beschreibung (optional)
+                name: ogBeschreibung
+                widget: text
+                required: false
+          - label: Kopfbereich
+            name: hero
+            widget: object
+            fields:
+              - label: Überschrift (H1)
+                name: h1
+                widget: string
+              - label: Einleitung
+                name: lead
+                widget: text
+              - label: Vorauswahl im Kontaktformular
+                name: leistung
+                widget: hidden
+              - label: Bild
+                name: bild
+                widget: image
+                hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+              - label: Handy-Version (optional)
+                name: bildMobil
+                widget: image
+                required: false
+                hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+              - label: Bildbeschreibung (für Google & Screenreader)
+                name: alt
+                widget: string
+          - label: Leistungsumfang
+            name: umfang
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Punkte
+                name: punkte
+                widget: list
+                field:
+                  label: Punkt
+                  name: punkt
+                  widget: string
+          - label: Ablauf
+            name: ablauf
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Schritte
+                name: schritte
+                widget: list
+                field:
+                  label: Schritt
+                  name: schritt
+                  widget: string
+              - label: Hinweis-Box (optional)
+                name: hinweis
+                widget: text
+                required: false
+          - label: Preise
+            name: preise
+            widget: object
+            fields:
+              - label: Preisbereich anzeigen
+                name: anzeigen
+                widget: boolean
+              - label: Überschrift
+                name: titel
+                widget: string
+                required: false
+              - label: Text
+                name: text
+                widget: text
+                required: false
+              - label: Preiszeilen
+                name: zeilen
+                widget: list
+                required: false
+                summary: "{{fields.leistung}}: {{fields.preis}}"
+                fields:
+                  - label: Leistung
+                    name: leistung
+                    widget: string
+                  - label: Preis
+                    name: preis
+                    widget: string
+              - label: Hinweis
+                name: hinweis
+                widget: text
+                required: false
+          - label: Text mit Bildern
+            name: story
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Absätze
+                name: absaetze
+                widget: list
+                field:
+                  label: Absatz
+                  name: absatz
+                  widget: text
+              - label: Bilder (1 oder 2)
+                name: bilder
+                widget: list
+                max: 2
+                fields:
+                  - label: Bild
+                    name: bild
+                    widget: image
+                    hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+                  - label: Handy-Version (optional)
+                    name: bildMobil
+                    widget: image
+                    required: false
+                    hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+                  - label: Bildbeschreibung (für Google & Screenreader)
+                    name: alt
+                    widget: string
+          - label: Häufige Fragen
+            name: faq
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: string
+              - label: Fragen
+                name: fragen
+                widget: list
+                summary: "{{fields.frage}}"
+                fields:
+                  - label: Frage
+                    name: frage
+                    widget: string
+                  - label: Antwort
+                    name: antwort
+                    widget: text
+          - label: Abschluss (Call to Action)
+            name: cta
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+      - name: drohnenaufnahmen
+        label: Drohnenaufnahmen
+        file: content/seiten/drohnenaufnahmen.json
+        fields:
+          - label: Google / SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Seitentitel (Browser-Tab & Google)
+                name: titel
+                widget: string
+              - label: Beschreibung (Google-Snippet
+                ca. 150 Zeichen): null
+                name: beschreibung
+                widget: text
+              - label: Vorschaubild für Social Media
+                name: bild
+                widget: image
+                required: false
+              - label: Leistungsname für Google (strukturierte Daten)
+                name: schemaName
+                widget: string
+                required: false
+              - label: Social-Media-Titel (optional)
+                name: ogTitel
+                widget: string
+                required: false
+              - label: Social-Media-Beschreibung (optional)
+                name: ogBeschreibung
+                widget: text
+                required: false
+          - label: Kopfbereich
+            name: hero
+            widget: object
+            fields:
+              - label: Überschrift (H1)
+                name: h1
+                widget: string
+              - label: Einleitung
+                name: lead
+                widget: text
+              - label: Vorauswahl im Kontaktformular
+                name: leistung
+                widget: hidden
+              - label: Bild
+                name: bild
+                widget: image
+                hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+              - label: Handy-Version (optional)
+                name: bildMobil
+                widget: image
+                required: false
+                hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+              - label: Bildbeschreibung (für Google & Screenreader)
+                name: alt
+                widget: string
+          - label: Leistungsumfang
+            name: umfang
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Punkte
+                name: punkte
+                widget: list
+                field:
+                  label: Punkt
+                  name: punkt
+                  widget: string
+          - label: Ablauf
+            name: ablauf
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Schritte
+                name: schritte
+                widget: list
+                field:
+                  label: Schritt
+                  name: schritt
+                  widget: string
+              - label: Hinweis-Box (optional)
+                name: hinweis
+                widget: text
+                required: false
+          - label: Preise
+            name: preise
+            widget: object
+            fields:
+              - label: Preisbereich anzeigen
+                name: anzeigen
+                widget: boolean
+              - label: Überschrift
+                name: titel
+                widget: string
+                required: false
+              - label: Text
+                name: text
+                widget: text
+                required: false
+              - label: Preiszeilen
+                name: zeilen
+                widget: list
+                required: false
+                summary: "{{fields.leistung}}: {{fields.preis}}"
+                fields:
+                  - label: Leistung
+                    name: leistung
+                    widget: string
+                  - label: Preis
+                    name: preis
+                    widget: string
+              - label: Hinweis
+                name: hinweis
+                widget: text
+                required: false
+          - label: Text mit Bildern
+            name: story
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Absätze
+                name: absaetze
+                widget: list
+                field:
+                  label: Absatz
+                  name: absatz
+                  widget: text
+              - label: Bilder (1 oder 2)
+                name: bilder
+                widget: list
+                max: 2
+                fields:
+                  - label: Bild
+                    name: bild
+                    widget: image
+                    hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+                  - label: Handy-Version (optional)
+                    name: bildMobil
+                    widget: image
+                    required: false
+                    hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+                  - label: Bildbeschreibung (für Google & Screenreader)
+                    name: alt
+                    widget: string
+          - label: Häufige Fragen
+            name: faq
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: string
+              - label: Fragen
+                name: fragen
+                widget: list
+                summary: "{{fields.frage}}"
+                fields:
+                  - label: Frage
+                    name: frage
+                    widget: string
+                  - label: Antwort
+                    name: antwort
+                    widget: text
+          - label: Abschluss (Call to Action)
+            name: cta
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+      - name: postproduktion
+        label: Postproduktion
+        file: content/seiten/postproduktion.json
+        fields:
+          - label: Google / SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Seitentitel (Browser-Tab & Google)
+                name: titel
+                widget: string
+              - label: Beschreibung (Google-Snippet
+                ca. 150 Zeichen): null
+                name: beschreibung
+                widget: text
+              - label: Vorschaubild für Social Media
+                name: bild
+                widget: image
+                required: false
+              - label: Leistungsname für Google (strukturierte Daten)
+                name: schemaName
+                widget: string
+                required: false
+              - label: Social-Media-Titel (optional)
+                name: ogTitel
+                widget: string
+                required: false
+              - label: Social-Media-Beschreibung (optional)
+                name: ogBeschreibung
+                widget: text
+                required: false
+          - label: Kopfbereich
+            name: hero
+            widget: object
+            fields:
+              - label: Überschrift (H1)
+                name: h1
+                widget: string
+              - label: Einleitung
+                name: lead
+                widget: text
+              - label: Vorauswahl im Kontaktformular
+                name: leistung
+                widget: hidden
+              - label: Bild
+                name: bild
+                widget: image
+                hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+              - label: Handy-Version (optional)
+                name: bildMobil
+                widget: image
+                required: false
+                hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+              - label: Bildbeschreibung (für Google & Screenreader)
+                name: alt
+                widget: string
+          - label: Leistungsumfang
+            name: umfang
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Punkte
+                name: punkte
+                widget: list
+                field:
+                  label: Punkt
+                  name: punkt
+                  widget: string
+          - label: Ablauf
+            name: ablauf
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Schritte
+                name: schritte
+                widget: list
+                field:
+                  label: Schritt
+                  name: schritt
+                  widget: string
+              - label: Hinweis-Box (optional)
+                name: hinweis
+                widget: text
+                required: false
+          - label: Preise
+            name: preise
+            widget: object
+            fields:
+              - label: Preisbereich anzeigen
+                name: anzeigen
+                widget: boolean
+              - label: Überschrift
+                name: titel
+                widget: string
+                required: false
+              - label: Text
+                name: text
+                widget: text
+                required: false
+              - label: Preiszeilen
+                name: zeilen
+                widget: list
+                required: false
+                summary: "{{fields.leistung}}: {{fields.preis}}"
+                fields:
+                  - label: Leistung
+                    name: leistung
+                    widget: string
+                  - label: Preis
+                    name: preis
+                    widget: string
+              - label: Hinweis
+                name: hinweis
+                widget: text
+                required: false
+          - label: Text mit Bildern
+            name: story
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Absätze
+                name: absaetze
+                widget: list
+                field:
+                  label: Absatz
+                  name: absatz
+                  widget: text
+              - label: Bilder (1 oder 2)
+                name: bilder
+                widget: list
+                max: 2
+                fields:
+                  - label: Bild
+                    name: bild
+                    widget: image
+                    hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+                  - label: Handy-Version (optional)
+                    name: bildMobil
+                    widget: image
+                    required: false
+                    hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+                  - label: Bildbeschreibung (für Google & Screenreader)
+                    name: alt
+                    widget: string
+          - label: Häufige Fragen
+            name: faq
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: string
+              - label: Fragen
+                name: fragen
+                widget: list
+                summary: "{{fields.frage}}"
+                fields:
+                  - label: Frage
+                    name: frage
+                    widget: string
+                  - label: Antwort
+                    name: antwort
+                    widget: text
+          - label: Abschluss (Call to Action)
+            name: cta
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+      - name: leistungen
+        label: Leistungen (Übersicht)
+        file: content/seiten/leistungen.json
+        fields:
+          - label: Google / SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Seitentitel (Browser-Tab & Google)
+                name: titel
+                widget: string
+              - label: Beschreibung (Google-Snippet
+                ca. 150 Zeichen): null
+                name: beschreibung
+                widget: text
+              - label: Vorschaubild für Social Media
+                name: bild
+                widget: image
+                required: false
+              - label: Leistungsname für Google (strukturierte Daten)
+                name: schemaName
+                widget: string
+                required: false
+              - label: Social-Media-Titel (optional)
+                name: ogTitel
+                widget: string
+                required: false
+              - label: Social-Media-Beschreibung (optional)
+                name: ogBeschreibung
+                widget: text
+                required: false
+          - label: Kopfbereich
+            name: hero
+            widget: object
+            fields:
+              - label: Überschrift (H1)
+                name: h1
+                widget: string
+              - label: Einleitung
+                name: lead
+                widget: text
+          - label: Leistungen
+            name: zeilen
+            widget: list
+            min: 4
+            max: 4
+            summary: "{{fields.titel}}"
+            fields:
+              - label: Seite
+                name: seite
+                widget: hidden
+              - label: Titel
+                name: titel
+                widget: string
+              - label: Linktext
+                name: linkText
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Stichworte
+                name: stichworte
+                widget: string
+              - label: Bild
+                name: bild
+                widget: image
+                hint: Einfach das Originalfoto hochladen – Größe und Format für Desktop und Handy werden automatisch erstellt.
+              - label: Handy-Version (optional)
+                name: bildMobil
+                widget: image
+                required: false
+                hint: Nur nötig, wenn am Handy ein anderer Bildausschnitt gezeigt werden soll.
+              - label: Bildbeschreibung (für Google & Screenreader)
+                name: alt
+                widget: string
+          - label: Preis & Planung
+            name: preis
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Preisfaktoren
+                name: faktoren
+                widget: list
+                fields:
+                  - label: Bezeichnung
+                    name: label
+                    widget: string
+                  - label: Wert
+                    name: wert
+                    widget: string
+              - label: Hinweis
+                name: hinweis
+                widget: string
+          - label: Häufige Fragen
+            name: faq
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Einleitung
+                name: intro
+                widget: string
+              - label: Fragen
+                name: fragen
+                widget: list
+                summary: "{{fields.frage}}"
+                fields:
+                  - label: Frage
+                    name: frage
+                    widget: string
+                  - label: Antwort
+                    name: antwort
+                    widget: text
+          - label: Abschluss (Call to Action)
+            name: cta
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+      - name: faq
+        label: FAQ-Seite
+        file: content/seiten/faq.json
+        fields:
+          - label: Google / SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Seitentitel (Browser-Tab & Google)
+                name: titel
+                widget: string
+              - label: Beschreibung (Google-Snippet
+                ca. 150 Zeichen): null
+                name: beschreibung
+                widget: text
+              - label: Vorschaubild für Social Media
+                name: bild
+                widget: image
+                required: false
+              - label: Leistungsname für Google (strukturierte Daten)
+                name: schemaName
+                widget: string
+                required: false
+              - label: Social-Media-Titel (optional)
+                name: ogTitel
+                widget: string
+                required: false
+              - label: Social-Media-Beschreibung (optional)
+                name: ogBeschreibung
+                widget: text
+                required: false
+          - label: Kopfbereich
+            name: hero
+            widget: object
+            fields:
+              - label: Überschrift (H1)
+                name: h1
+                widget: string
+              - label: Einleitung
+                name: lead
+                widget: text
+          - label: Themen
+            name: themen
+            widget: list
+            summary: "{{fields.titel}}"
+            fields:
+              - label: Titel
+                name: titel
+                widget: string
+              - label: Sprungmarke (klein
+                ohne Leerzeichen): null
+                name: id
+                widget: string
+                pattern:
+                  - ^[a-z0-9-]+$
+                  - Nur Kleinbuchstaben, Zahlen und Bindestriche
+              - label: Fragen
+                name: fragen
+                widget: list
+                summary: "{{fields.frage}}"
+                fields:
+                  - label: Frage
+                    name: frage
+                    widget: string
+                  - label: Antwort
+                    name: antwort
+                    widget: text
+          - label: Abschluss (Call to Action)
+            name: cta
+            widget: object
+            fields:
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+      - name: referenzen
+        label: Referenzen-Seite (Texte)
+        file: content/seiten/referenzen.json
+        fields:
+          - label: Google / SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - label: Seitentitel (Browser-Tab & Google)
+                name: titel
+                widget: string
+              - label: Beschreibung (Google-Snippet
+                ca. 150 Zeichen): null
+                name: beschreibung
+                widget: text
+              - label: Vorschaubild für Social Media
+                name: bild
+                widget: image
+                required: false
+              - label: Leistungsname für Google (strukturierte Daten)
+                name: schemaName
+                widget: string
+                required: false
+              - label: Social-Media-Titel (optional)
+                name: ogTitel
+                widget: string
+                required: false
+              - label: Social-Media-Beschreibung (optional)
+                name: ogBeschreibung
+                widget: text
+                required: false
+          - label: Kopfbereich
+            name: hero
+            widget: object
+            fields:
+              - label: Überschrift (H1)
+                name: h1
+                widget: string
+              - label: Einleitung
+                name: lead
+                widget: text
+  - name: einstellungen
+    label: Partner & Einstellungen
+    files:
+      - name: partner
+        label: Partner & Auftraggeber
+        file: content/partner.json
+        fields:
+          - label: Partner
+            name: partner
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Website
+                name: url
+                widget: string
+              - label: Logo (PNG/WebP
+                am besten ohne Rand): null
+                name: logo
+                widget: image
+              - label: Darstellung
+                name: darstellung
+                widget: select
+                default: standard
+                options:
+                  - label: Standard (helles Logo, quadratisch)
+                    value: standard
+                  - label: Breit (z. B. Schriftzug)
+                    value: breit
+                  - label: Weißer Hintergrund (für farbige Logos)
+                    value: heller-hintergrund
+      - name: filter
+        label: Galerie-Filter
+        file: content/projekt-filter.json
+        fields:
+          - label: Filter-Buttons
+            name: filters
+            widget: list
+            summary: "{{fields.label}}"
+            hint: Der erste Eintrag muss „all“ / „Alle“ bleiben.
+            fields:
+              - label: Kennung (klein
+                ohne Leerzeichen): null
+                name: id
+                widget: string
+                pattern:
+                  - ^[a-z0-9-]+$
+                  - Nur Kleinbuchstaben, Zahlen und Bindestriche
+              - label: Beschriftung
+                name: label
+                widget: string
+      - name: allgemein
+        label: Kontakt & Unternehmen
+        file: content/einstellungen.json
+        fields:
+          - label: E-Mail
+            name: email
+            widget: string
+          - label: Telefon
+            name: telefon
+            widget: string
+          - label: Instagram
+            name: instagram
+            widget: string
+          - label: YouTube
+            name: youtube
+            widget: string
+          - label: Text im Footer
+            name: footerText
+            widget: text
+          - label: Copyright
+            name: copyright
+            widget: string
+          - label: Kontaktbereich
+            name: kontaktformular
+            widget: object
+            fields:
+              - label: Kleine Überschrift
+                name: eyebrow
+                widget: string
+              - label: Überschrift
+                name: titel
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - name: accessKey
+                widget: hidden
+          - label: Unternehmensdaten für Google
+            name: unternehmen
+            widget: object
+            collapsed: true
+            fields:
+              - label: Preisspanne
+                name: priceRange
+                widget: string
+              - label: Straße
+                name: strasse
+                widget: string
+              - label: Ort
+                name: ort
+                widget: string
+              - label: Bundesland
+                name: region
+                widget: string
+              - label: PLZ
+                name: plz
+                widget: string
+              - label: Einsatzgebiet
+                name: einsatzgebiet
+                widget: list
+                field:
+                  label: Ort
+                  name: ort
+                  widget: string
+              - label: Social-Media-Profile
+                name: profile
+                widget: list
+                field:
+                  label: Adresse
+                  name: url
+                  widget: string
+          - label: Leistungen (Navigation)
+            name: leistungen
+            widget: list
+            min: 4
+            max: 4
+            summary: "{{fields.name}}"
+            fields:
+              - name: key
+                widget: hidden
+              - label: Name
+                name: name
+                widget: string
+              - label: Kurztext (Box „Weitere Leistungen“)
+                name: kurz
+                widget: string
