@@ -2,12 +2,15 @@
   "seo": {
     "titel": "Framenex – Foto & Videoproduktion in Niederösterreich & Wien",
     "beschreibung": "Professionelle Videoproduktion, Fotografie, Drohnenaufnahmen und Postproduktion für Unternehmen, Events und besondere Projekte in Wien, Niederösterreich und ganz Österreich.",
-    "bild": "compressed/video_loading.webp"
+    "bild": "compressed/video_loading.webp",
+    "schemaName": "",
+    "ogTitel": "",
+    "ogBeschreibung": ""
   },
   "hero": {
     "eyebrow": "Film · Foto · Drohne · Postproduktion",
     "titelMarke": "Framenex",
-    "titel": "– Foto & Videoproduktion in Niederösterreich & Wien",
+    "titel": "– Foto & Videoproduktion in Niederösterreich und Wien",
     "untertitel": "Video, Fotografie, Drohnenaufnahmen und Postproduktion für Unternehmen, Events und besondere Projekte – einzeln buchbar oder kombiniert.",
     "buttonPrimaer": "Kostenloses Erstgespräch",
     "buttonSekundaer": "Leistungen ansehen",
